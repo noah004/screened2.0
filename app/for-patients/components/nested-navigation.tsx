@@ -5,7 +5,9 @@ import { useEffect, useRef, useState } from "react";
 export default function NestedNavigation() {
   //set the underlined state:
   const sectionsArr: Array<Array<string>> = [
+    // the first string in each array is the section,
     [
+      //the others are sub-sections
       "Cancers",
       "Cervical Cancer",
       "Breast Cancer",
