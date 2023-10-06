@@ -8,12 +8,12 @@ export default function NestedNavigation() {
     // the first string in each array is the section,
     [
       //the others are sub-sections
-      "Cancers",
-      "Cervical Cancer",
       "Breast Cancer",
-      "Colorectal Cancer",
-      "Lung Cancer",
     ],
+    ["Cervical Cancer"],
+    ["Colorectal Cancer"],
+    ["Lung Cancer"],
+
     ["Type Two Diabetes"],
     ["Hypertension"],
     ["Fragility Fractures"],
@@ -87,88 +87,181 @@ export default function NestedNavigation() {
         <div className="col-9 ms-4">
           <div
             ref={(element) => {
-              refs.current.cancers = element!;
-            }}
-            id={"Cancers"}
-          >
-            <h1>Cancers</h1>
-          </div>
-          <div
-            ref={(element) => {
               refs.current.cervical = element!;
             }}
-            id={"Cervical Cancer"}
+            id={"Breast Cancer"}
           >
-            <h3>Cervical Cancer</h3>
+            <h1>Breast Cancer</h1>
             <p>
-              In 2022, 1450 women in Canada were diagnosed with cervical cancer.
-              Cervical cancer is mainly caused by certain types of HPV. It is
-              transmitted through sexual activity. Pap tests are done to
-              visualize the cervix and obtain a sample to undergo analysis.
-              Results from this test can be normal or can show varying degrees
-              of abnormality. Based on the result, management can include
-              repeating the pap test, doing an HPV test or procedures to remove
-              the abnormal tissue. Detection can lead to early treatment, which
-              has the ability to prevent cervical cancer from developing.
+              Breast cancer is the most common cancer in women. 1 in 8 women in
+              Canada are estimated to be diagnosed in their lifetime<sup>1</sup>
+              . Certain factors can predispose women to breast cancer. This
+              includes advancing age, certain genetic mutations, having family
+              members with breast cancer, previous radiation therapy to the
+              chest, and early menstruation or late menopause. Fat tissue can
+              increase the amount of estrogen circulating in your body, which
+              has been associated with an increased risk of breast cancer.
             </p>
             <p>
-              It is recommended to undergo a pap test between ages 21-65 every
-              2-3 years. This can be delayed if not yet sexually active at age
-              21. Screening can be stopped at age 65 if the last 3 consecutive
-              pap tests have been negative.
+              Certain lifestyle factors can also increase the risk of breast
+              cancer. This includes smoking, sedentary behavior, drinking
+              alcohol and obesity. Speak to your healthcare provider if you
+              would like help with mitigating these risk factors<sup>2</sup>.
             </p>
             <p>
-              Pap tests may be uncomfortable however they should not be painful.
-              In order to prepare yourself, avoid going when you have your
-              period as this may lead to inaccurate results. In the 48 hours
-              before the test, do not have sex or insert any products in your
-              vagina. In Canada, it is recommended to get the HPV Vaccine
-              (Gardasil) in order to help prevent infection by certain strains
-              of HPV.
+              The screening test for breast cancer is a mammogram, which is an
+              X-Ray photo of the breast. These images can detect early stages of
+              breast cancer before any symptoms start which can allow for early
+              initiation of treatment. In general, it is recommended to undergo
+              a mammogram between ages 50 to 74 every 2-3 years. However, this
+              may be different depending on your risk factors.
             </p>
             <p>
-              People who smoke are twice as likely to develop cervical cancer
-              than those who don’t smoke. Speak to your health care professional
-              about smoking cessation or visit **HERE - hyperlink* on our page
-              for resources to help you quit.
+              Undergoing screening is an individualized choice based on
+              what&apos;s important to you. Speak to your health care provider
+              if you would like to know more about the potential harms about
+              screening for breast cancer, such as unwanted further tests or
+              treatments. To prepare yourself for your test, do not wear any
+              products on your body including deodorant, perfume or powders.
             </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://cancer.ca/en/cancer-information/cancer-types/breast/statistics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lee S. Breast cancer statistics. Canadian Cancer Society.
+                  Published May 2022. Accessed September 3, 2023.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.cdc.gov/cancer/breast/basic_info/risk_factors.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CDCBreastCancer. What Are the Risk Factors for Breast Cancer?
+                  Centers for Disease Control and Prevention. Published July 31,
+                  2023. Accessed September 3, 2023.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
               refs.current.breast = element!;
             }}
-            id="Breast Cancer"
+            id="Cervical Cancer"
           >
-            <h3>Breast Cancer</h3>
+            <h1>Cervical Cancer</h1>
             <p>
-              Breast cancer is the most common cancer in women. 1 in 8 women in
-              Canada are estimated to be diagnosed in their lifetime.
+              Cervical cancer represents 1.3% of all new female cancers
+              <sup>1</sup>. Cervical cancer is mainly caused by certain types of
+              human papillomavirus (HPV), which is transmitted through sexual
+              activity. Other risk factors include: having multiple sexual
+              partners, early onset of sexual activity, being immunosuppressed
+              and cigarette smoking<sup>2</sup>.
             </p>
             <p>
-              The screening test for breast cancer is a mammogram, which is an
-              X-Ray photo of the breast. These images can detect early stages of
-              breast cancer before any symptoms start. In general, it is
-              recommended to undergo a mammogram between ages 50 to 74 every 2-3
-              years. However, this may be different depending on your risk
-              factors.
+              Pap tests are done to visualize the cervix and obtain a sample to
+              undergo analysis. This is done by a healthcare provider using a
+              speculum. Results from this test can be normal or can show varying
+              degrees of abnormality. Based on the result and your age, you may
+              be asked to repeat the pap test, do an HPV test or undergo
+              colposcopy. Detection can lead to early treatment, which has the
+              ability to prevent cervical cancer from developing.
             </p>
             <p>
-              Speak to your health care provider if you are at higher risk for
-              developing breast cancer. This includes: history of atypical
-              breast biopsies, history of chest radiation or a genetic
-              predisposition. Have a conversation with your healthcare provider
-              if you would like to know more about the potential harms of
-              screening for breast cancer.
+              It is recommended to undergo a pap test between ages 21-69 every
+              2-3 years. This can be delayed if not yet sexually active at age
+              21. Screening can be stopped at age 65 if the last 2 consecutive
+              pap tests in the past 10 years have been negative.
             </p>
             <p>
-              To prepare yourself for your test, do not wear any products on
-              your body including deodorant, perfume or powders. Fat tissue can
-              increase the amount of estrogen circulating in your body, which
-              has been associated with an increased risk of breast cancer.
-              Keeping a healthy weight and being physically active can help
-              reduce your risk. Limiting alcohol consumption can also help
-              reduce your risk.
+              Pap tests may be uncomfortable however they should generally not
+              be painful. In order to prepare yourself, avoid going when you
+              have your period as this may lead to inaccurate results. In the 48
+              hours before the test, do not insert any products in your vagina.
+              Avoid penetrative sexual activity in the 24 hours before your test
+              <sup>3</sup>.
             </p>
+            <p>
+              In Canada, it is recommended to get the HPV Vaccine (Gardasil) in
+              order to help prevent infection by certain strains of HPV which
+              may reduce your risk of cervical cancer. Using barrier protection
+              (such as condoms) during intercourse is an important way to help
+              reduce the risk of HPV infection.
+            </p>
+            <p>
+              Using barrier protection (such as condoms) during intercourse is
+              an important way to help reduce the risk of HPV infection.
+            </p>
+            <p>
+              People who smoke are twice as likely to develop cervical cancer
+              than those who don&apos;t smoke. Speak to your health care
+              professional about smoking cessation or visit{" "}
+              <a
+                className="purple"
+                href="https://www.tobaccofreequebec.ca/iquitnow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tobaco-Free Quebec
+              </a>{" "}
+              to help you quit
+              <sup>4</sup>.
+            </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.canada.ca/en/public-health/services/chronic-diseases/cancer/cervical-cancer.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada PHA of. Cervical Cancer. Published March 2, 2009.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.cancer.org/cancer/types/cervical-cancer/causes-risks-prevention/risk-factors.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cervical Cancer Risk Factors | Risk Factors for Cervical
+                  Cancer.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://cancer.ca/en/cancer-information/find-cancer-early/get-screened-for-cervical-cancer/everything-you-ever-wanted-to-know-about-having-a-pap-test
+"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lee S. Everything you ever wanted to know about the Pap test.
+                  Canadian Cancer Society.{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.tobaccofreequebec.ca/iquitnow
+"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  I Quit Now - Tobacco-Free Quebec.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
@@ -176,19 +269,19 @@ export default function NestedNavigation() {
             }}
             id="Colorectal Cancer"
           >
-            <h3>Colorectal Cancer</h3>
+            <h1>Colorectal Cancer</h1>
             <p>
-              Colorectal cancer is a leading cause of death from cancer. The
-              rates of new cases are declining partly due to an increase in
-              screening. Screening can identify precancerous lesions and when
-              removed can reduce progression to cancer. Most people with
-              colorectal cancer have no family history.
+              In 2022, 24,300 Canadians were diagnosed with colorectal cancer in
+              Canada<sup>1</sup>. Screening can identify precancerous lesions
+              and when removed can reduce progression to cancer. Most people
+              with colorectal cancer have no family history.
             </p>
             <p>
               The FIT test is a stool test that checks for the presence of blood
-              in stool. Alternatively, you may undergo a flexible sigmoidoscopy.
-              Similar to a colonoscopy, this is a procedure where a camera is
-              inserted through the rectum to view the colon and rectum.
+              in stool. Alternatively, you may be asked to undergo a flexible
+              sigmoidoscopy. Similar to a colonoscopy, this is a procedure where
+              a camera is inserted through the rectum to view the colon and
+              rectum.
             </p>
             <p>
               People aged 50-74 can either undergo a FIT test every 2 years or a
@@ -199,21 +292,34 @@ export default function NestedNavigation() {
             </p>
             <p>
               For the FIT test, you will need to collect a small sample of your
-              stool using a collection kit. Once you have collected the sample,
-              you will need to return it to the testing centre.
+              stool using a collection kit which can be found at a testing
+              center. Once you have collected the sample, you will need to
+              return it to the testing center.
             </p>
             <p>
               For the sigmoidoscopy, your healthcare provider will prescribe
               laxatives that you will need to start taking the day prior which
-              will help empty out your bowels in preparation for the test.
+              will help empty your bowels in preparation for the test.
             </p>
             <p>
               Colorectal cancer has been linked to increased alcohol
               consumption, obesity, smoking, lack of physical activity. It is
               recommended to consume a healthy diet with whole grains, fruits,
-              vegetables and limit the amount of red and processed meats. *
-              please click here for more information (hyperlink)
+              vegetables and limit the amount of red and processed meats.
             </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://cancer.ca/en/cancer-information/cancer-types/colorectal/statistics"
+                  target="_blank"
+                  rel="noopener norefeerer"
+                >
+                  Lee S. Colorectal cancer statistics. Canadian Cancer Society.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
@@ -221,20 +327,74 @@ export default function NestedNavigation() {
             }}
             id="Lung Cancer"
           >
-            <h3>Lung Cancer</h3>
+            <h1>Lung Cancer</h1>
             <p>
-              Most people with lung cancer will not have symptoms for the first
-              several years. It is usually diagnosed at a more advanced stage.
+              In 2022, 30 000 Canadians were diagnosed with lung and bronchus
+              cancer.<sup>1</sup> Most people with lung cancer will not have
+              symptoms for the first several years. It is usually diagnosed at a
+              more advanced stage.
             </p>
             <p>
               Currently, there are no official screening recommendations for
               lung cancer in Quebec. However, in 2021, Quebec initiated a lung
-              cancer screening demonstration project. It offers a low dose CT
-              for people at high risk for developing lung cancer. This includes:
-              people between the ages of 55-74 who have either smoked on or off
-              for at least 20 years or smoked on or off for at least 20 years
-              and quit less than 15 years ago.
+              cancer screening demonstration project.<sup>2</sup> It offers a
+              low dose CT for people at high risk for developing lung cancer.
+              This includes: people between the ages of 55-74 who have either
+              smoked on or off for at least 20 years or smoked on or off for at
+              least 20 years and quit less than 15 years ago.
             </p>
+            <p>
+              If you do not have a healthcare provider, you can email{" "}
+              <a
+                style={{ color: "black" }}
+                href="mailto:depistagecancerpoumon@ssss.gouv.ca"
+              >
+                depistagecancerpoumon@ssss.gouv.ca
+              </a>{" "}
+              or call{" "}
+              <a style={{ color: "black" }} href="tel:18446564312">
+                1-844-656-4312
+              </a>
+              , to find out if you are eligible for the project.
+            </p>
+            <p>
+              Cigarette smoking is the leading risk factor for lung cancer.
+              Quitting at any age can lower this risk. Please visit{" "}
+              <a
+                className="purple"
+                href="https://www.tobaccofreequebec.ca/iquitnow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tobaco-Free Quebec
+              </a>{" "}
+              if you would like support to quit smoking.
+            </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="cancer.ca/en/cancer-information/cancer-types/lung/statistics"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lee, Sid. “Lung and Bronchus Cancer Statistics.” Canadian
+                  Cancer Society.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lung cancer screening demonstration project. Gouvernement du
+                  Québec.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
@@ -244,14 +404,171 @@ export default function NestedNavigation() {
           >
             <h1>Type Two Diabetes</h1>
             <p>
-              This is some placeholder content for the scrollspy page. Note that
-              as you scroll down the page, the appropriate navigation link is
-              highlighted. repeated throughout the component example. We keep
-              adding some more example copy here to emphasize the scrolling and
-              highlighting. Keep in mind that the JavaScript plugin tries to
-              pick the right element among all that may be visible. Multiple
-              visible scrollspy targets at the same time may cause some issues.
+              It is estimated that over 3 million Canadians have been diagnosed
+              with diabetes, making it one of the most common chronic health
+              conditions.<sup>1</sup> Type two diabetes may be driven by
+              multiple factors, such as unhealthy eating, lack of physical
+              activity, smoking, and various determinants of health related to
+              socioeconomic status and living environment.<sup>2,3</sup>{" "}
+              Furthermore, 6.1% of Canadians aged 20-79 have prediabetes, which
+              puts them at a higher risk of developing type 2 diabetes in the
+              future.<sup>1</sup>
             </p>
+            <p>
+              Uncontrolled sugar levels can affect both the big and small blood
+              vessels in the body. If left untreated, this can lead to
+              devastating effects such as heart disease, kidney failure, stroke,
+              blindness amongst others.<sup>4</sup>
+            </p>
+            <p>
+              Screening for type 2 diabetes involves taking a blood test which
+              measures the glucose in the blood, or the hemoglobin A1C, another
+              glucose test that acts a proxy for the average glucose level in
+              the last three months. From ages 18 and up, using the CANRISK
+              questionnaire, you will be able to continue assessing your risk of
+              developing diabetes.<sup>5</sup>
+            </p>
+            <p>
+              Before coming to the test, ask your healthcare professional if you
+              will be needing to fast. If so, the recommendation is to avoid
+              eating or drinking anything aside from water 8 hours before your
+              test.<sup>6</sup>
+            </p>
+            <p>
+              Developing type 2 diabetes is influenced by many factors, but
+              there are many things you can do to decrease your risk. One
+              important thing to consider is maintaining a healthy weight. It is
+              encouraged to discuss with your healthcare provider what is a
+              healthy weight for you. You may visit the{" "}
+              <a
+                className="purple"
+                href="https://food-guide.canada.ca/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Canadian Food Guide
+              </a>{" "}
+              for more information about recommendations.<sup>6</sup> It is
+              recommended to include 150 minutes of moderate physical activity
+              per week, such as brisk walking.<sup>8</sup> Smoking cessation is
+              also an important factor in preventing the development of type 2
+              diabetes. Please discuss with your healthcare provider for more
+              information and guidance.<sup>9</sup>
+            </p>
+            <p>
+              You can visit{" "}
+              <a
+                className="purple"
+                href="https://guidelines.diabetes.ca/patient-resources"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Diabetes Canada
+              </a>{" "}
+              for more information.
+            </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/framework-diabetes-canada.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada PHA of. Framework for diabetes in Canada.
+                </a>{" "}
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1016/j.jcjd.2019.09.001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Yaghoubi M, Mansell K, Vatanparast H, Steeves M, Zeng W, Farag
+                  M. Prevalence of Type 1 and Type 2 Diabetes-Related
+                  Complications and Their Association With Determinants
+                  Identified in Canada&apos;s Survey on Living With Chronic
+                  Diseases—Diabetes Component. Can J Diabetes.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1007/s11892-017-0885-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Butler AM. Social Determinants of Health and Racial/Ethnic
+                  Disparities in Type 2 Diabetes in Youth. Curr Diab Rep.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.7150/ijms.10001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Wu Y, Ding Y, Tanaka Y, Zhang W. Risk Factors Contributing to
+                  Type 2 Diabetes and Recent Advances in the Treatment and
+                  Prevention.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Diabetes, Type 2—CANRISK – Canadian Task Force on Preventive
+                  Health Care.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://myhealth.alberta.ca:443/Health/aftercareinformation/pages/conditions.aspx?hwid=ad1603"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Blood Glucose: About This Test.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://food-guide.canada.ca/en/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada H. Welcome to Canada’s food guide.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1056/nejmoa012512"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Reduction in the Incidence of Type 2 Diabetes with Lifestyle
+                  Intervention or Metformin.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.canada.ca/en/public-health/services/chronic-diseases/diabetes/prevent-type-2-diabetes.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada PHA of. How To Prevent Type 2 Diabetes.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
@@ -260,7 +577,176 @@ export default function NestedNavigation() {
             id="Hypertension"
           >
             <h1>Hypertension</h1>
-            <p></p>
+            <p>
+              Approximately 19% of all Canadian adults have high blood pressure.
+              <sup>1</sup> High blood pressure increases the amount of work that
+              the heart needs to exert in order to pump blood to the entire
+              body. This can cause the heart to become damaged. It can also
+              cause damage to the arteries, leading to complications such as
+              tears, hardening or bulging. It can also increase the risk of
+              stroke, dementia, blindness and heart attack.<sup>2</sup>
+            </p>
+            <p>
+              High blood pressure can be due to a variety of factors. Some of
+              the risk factors are not within our control such as sex,
+              ethnicity, gender and a family history of hypertension, whereas
+              others factors that we will describe below can be addressed
+              through lifestyle changes to reduce your risk. In order to
+              mitigate these effects, it is important to check and understand
+              your blood pressure.<sup>3</sup>
+            </p>
+            <p>
+              Blood pressure is written as two separate numbers: The first is
+              systolic pressure which represents the pressure in the blood
+              pressure when the heart beats. The diastolic pressure, which is
+              the second number, is the pressure of the heart at rest.
+              <sup>4</sup>
+            </p>
+            <p>
+              The Canadian task force recommends that blood pressure should be
+              checked at all appropriate primary health care visits for
+              individuals above 18 years of age.<sup>5</sup> Following the
+              reading, your healthcare provider will be able to assess whether
+              you are at risk for hypertension and this may be followed with at
+              home blood pressure monitoring.<sup>6</sup>
+            </p>
+            <p>
+              Before taking your blood pressure, your healthcare provider will
+              position you in the appropriate placement to allow for the most
+              accurate read. During this time, it is important to not talk or
+              move prior to the measurement, keep legs uncrossed and feet flat
+              on the floor. Based on your blood pressure measurements, you may
+              be asked to continue monitoring blood pressure at home. You may be
+              asked to wear a device that will monitor your blood pressure over
+              24 hours. Otherwise, you may be asked to monitor your own blood
+              pressure with a device or at your local pharmacy, and then monitor
+              the values with a diary. For more information about how to take at
+              home blood pressure measurements, and for an associated guide,
+              please click{" "}
+              <a
+                className="purple"
+                href="https://guidelines.hypertension.ca/wp-content/uploads/2023/03/HTC_BloodPressureLog_ENG_FILLABLE.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </a>
+              .
+            </p>
+            <p>
+              To decrease the risk of hypertension or reverse its effects, there
+              are many steps you can take. Engaging in regular physical
+              activity, maintaining a healthy body weight, and reducing alcohol
+              consumption are recommended. Please speak with your healthcare
+              provider to discuss a good weight to maintain. Additionally, there
+              are various diets that have been shown to decrease the risk of
+              hypertension. The DASH diet, designed specifically for individuals
+              with high blood pressure, may be an interesting choice.
+              Furthermore, limiting sodium intake to around 2 grams per day is
+              strongly encouraged. For reference, a teaspoon of salt contains
+              around 2.3 grams of sodium.<sup>6</sup>
+            </p>
+            <b>Additional Resources:</b>
+            <ul>
+              <li>
+                <a
+                  className="purple"
+                  href="https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_BPActionPlan.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Blood Pressure Action Plan
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.mountsinai.on.ca/care/fammed/patient-resources/hypertension/hypertension-brochure-blood-pressure-canada.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Managing Your Blood Pressure
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.nhlbi.nih.gov/education/dash-eating-plan#:~:text=The%20DASH%20eating%20plan%20requires,beans%2C%20nuts%2C%20and%20vegetable%20oils"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Description of the DASH Eating Plan
+                </a>
+              </li>
+            </ul>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://canadiantaskforce.ca/hypertension-clinician-summary/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hypertension—Clinician Summary - Canadian Task Force on
+                  Preventive Health Care.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.canada.ca/en/public-health/services/diseases/heart-health/high-blood-pressure/health-effects-high-blood-pressure.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada PHA of. Health effects of high blood pressure.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.heartandstroke.ca/en/heart-disease/risk-and-prevention/condition-risk-factors/high-blood-pressure/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  High blood pressure. Heart and Stroke Foundation of Canada.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Understanding Blood Pressure Readings.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hypertension (2012) - Canadian Task Force on Preventive Health
+                  Care.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1016/j.cjca.2020.02.086"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rabi DM, McBrien KA, Sapir-Pichhadze R, et al. Hypertension
+                  Canada&apos;s 2020 Comprehensive Guidelines for the
+                  Prevention, Diagnosis, Risk Assessment, and Treatment of
+                  Hypertension in Adults and Children.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
@@ -269,7 +755,200 @@ export default function NestedNavigation() {
             id="Fragility Fractures"
           >
             <h1>Fragility Fractures</h1>
-            <p></p>
+            <p>
+              Osteoporosis is a common condition impacting more than 2.3 million
+              Canadians.<sup>1</sup> It is characterized by a decrease in bone
+              density, which renders the bones fragile and susceptible to
+              fractures even with minimal force or trauma, known as fragility
+              fractures.<sup>1,2</sup>
+            </p>
+            <p>
+              Older age, being of the female sex, white race, prolonged
+              immobility, and long use of corticosteroids are known to increase
+              risk of osteoporosis.<sup>3</sup> For individuals aged 50 years or
+              older, over 80% of all fractures are due to osteoporosis.
+              <sup>1</sup>
+            </p>
+            <p>
+              Different methods are available to evaluate your risk of fragility
+              fractures. Two complementary screening approaches include the FRAX
+              score and a Bone Mineral Density (BMD) test. The most common test
+              that measures BMD is the dual energy x-ray absorptiometry (DXA),
+              and involves lying flat on a table for several minutes while an
+              x-ray scans your spine or hip(s).<sup>4</sup> It's important to
+              note that screening for fragility fractures carries the potential
+              for overdiagnosis and adverse effects from treatment.
+            </p>
+            <p>
+              The Canadian task force recommends screening starting at the age
+              of 65. It is recommended to use the risk assessment tool known as
+              FRAX as an initial tool to estimate the risk of a fracture.
+              <sup>5</sup> After assessing your risk, you may be offered further
+              tests such as undergoing a BMD test.<sup>2</sup>
+            </p>
+            <p>
+              It is important to tell your doctor if you had a recent exam with
+              contrast (such as a CT or nuclear medicine test), as it may
+              interfere with the imaging.<sup>6</sup>
+            </p>
+            <p>
+              Engaging in exercise that involves weight-bearing and resistance
+              exercises helps maintain the strength of your bones. These
+              exercises can include walking, jogging, weightlifting, or using
+              resistance bands. working on balance. Activities like Yoga and Tai
+              chi are known to improve balance and stability. A diet rich in
+              calcium is important to ensure good bone health. This includes
+              dairy products or fortified plant based milk.<sup>7</sup> Vitamin
+              D supplementation is recommended for all Canadian adults.
+              <sup>8</sup> Smoking has been shown to have negative effects on
+              the skeletal system, and is a risk factor for developing
+              osteoporosis.<sup>9</sup>
+            </p>
+            <p>
+              Quitting at any age can lower this risk. Please visit
+              https://www.tobaccofreequebec.ca/iquitnow if you would like
+              support to quit smoking.<sup>10</sup>
+            </p>
+            <b>Additional Resources:</b>
+            <ul>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.canada.ca/en/public-health/services/health-promotion/healthy-living/physical-activity/physical-activity-tips-adults-18-64-years.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada's Physical Activity guides
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="http://www.osteoporosis.ca/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Osteoporosis Canada
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://osteoporosis.ca/calcium/#:~:text=Adults%20between%2019%2D50%20years,Rich%20Foods%20for%20some%20inspiration."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Osteoporosis Canada: Calcium
+                </a>
+              </li>
+            </ul>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://osteoporosis.ca/facts-and-stats/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facts and Stats | Osteoporosis Canada.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://canadiantaskforce.ca/guidelines/published-guidelines/fragility-fractures/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fragility Fractures (2023) – Canadian Task Force on Preventive
+                  Health Care.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc1580372/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kelsey JL. Risk factors for osteoporosis and associated
+                  fractures.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://osteoporosis.ca/bone-mineral-density-testing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bone Mineral Density Testing | Osteoporosis Canada.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://frax.shef.ac.uk/FRAX/tool.aspx?country=9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FRAX ®Fracture Risk Assessment Tool.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.mayoclinic.org/tests-procedures/bone-density-test/about/pac-20385273"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bone density test - Mayo Clinic.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canada PHA of. Osteoporosis.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.osteoporosis.ca/vitamin-d/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Vitamin D: Osteoporosis Canada.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1155/2018/1206235"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Al-Bashaireh AM, Haddad LG, Weaver M, Chengguo X, Kelly DL,
+                  Yoon S. The Effect of Tobacco Smoking on Bone Mass: An
+                  Overview of Pathophysiologic Mechanisms.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.tobaccofreequebec.ca/iquitnow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  I Quit Now - Tobacco-Free Quebec.
+                </a>
+              </li>
+            </ol>
           </div>
           <div
             ref={(element) => {
@@ -278,7 +957,79 @@ export default function NestedNavigation() {
             id="Abdominal Aortic Aneurysm"
           >
             <h1>Abdominal Aortic Aneurysm</h1>
-            <p></p>
+            <p>
+              The abdominal aorta is the main blood vessel in the body that
+              connects to the heart. An Abdominal Aortic Aneurysm (AAA) is a
+              condition where a portion of the vessel becomes enlarged. If not
+              caught early on, it has the potential to get larger and may lead
+              to rupture, which comes with a risk of life-threatening bleeding.
+              <sup>1</sup> The Canadian task force recommends that men 65 to 80
+              years of age have a one-time screening for AAA with an ultrasound
+              to reduce the risk of AAA negative events<sup>2</sup>.
+            </p>
+            <p>
+              In addition to screening, taking steps to protect yourself from
+              developing an abdominal aortic aneurysm is crucial. There are
+              various things that you can do to help decrease your risk of
+              developing an AAA or reduce its growth. There are certain steps
+              you can take to help reduce your risk such as cutting down and
+              ultimately quitting tobacco smoking, which has been shown to play
+              a big role in the development of AAA.<sup>3</sup> Please visit{" "}
+              <a
+                className="purple"
+                href="https://www.tobaccofreequebec.ca/iquitnow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tobacco-Free Quebec
+              </a>{" "}
+              if you would like support to quit smoking.<sup>4</sup>
+            </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.nhs.uk/conditions/abdominal-aortic-aneurysm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abdominal aortic aneurysm. nhs.uk.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abdominal Aortic Aneurysm (2017) - Canadian Task Force on
+                  Preventive Health Care.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1001/archinte.160.10.1425"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lederle FA. The Aneurysm Detection and Management Study
+                  Screening Program: Validation Cohort and Final Results.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.tobaccofreequebec.ca/iquitnow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  I Quit Now - Tobacco-Free Quebec.
+                </a>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
