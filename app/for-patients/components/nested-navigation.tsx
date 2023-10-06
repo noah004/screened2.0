@@ -805,9 +805,16 @@ export default function NestedNavigation() {
               osteoporosis.<sup>9</sup>
             </p>
             <p>
-              Quitting at any age can lower this risk. Please visit
-              https://www.tobaccofreequebec.ca/iquitnow if you would like
-              support to quit smoking.<sup>10</sup>
+              Quitting at any age can lower this risk. Please visit{" "}
+              <a
+                className="purple"
+                href="https://www.tobaccofreequebec.ca/iquitnow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tobaco-Free Quebec
+              </a>{" "}
+              if you would like support to quit smoking.<sup>10</sup>
             </p>
             <b>Additional Resources:</b>
             <ul>
