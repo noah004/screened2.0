@@ -6,18 +6,17 @@ export default function NestedNavigation() {
   //set the underlined state:
   const sectionsArr: Array<Array<string>> = [
     // the first string in each array is the section,
-    [
-      //the others are sub-sections
-      "Breast Cancer",
-    ],
+    //the others are sub-sections
+
+    ["Breast Cancer"],
     ["Cervical Cancer"],
     ["Colorectal Cancer"],
     ["Lung Cancer"],
 
     ["Type Two Diabetes"],
     ["Hypertension"],
-    ["Fragility Fractures"],
     ["Abdominal Aortic Aneurysm"],
+    ["Fragility Fractures"],
   ];
 
   //Create an underlined state for all table of content items
@@ -56,17 +55,43 @@ export default function NestedNavigation() {
     //The nested navigation
     <div className="container-fluid">
       <div className="row">
-        <div className="col-2 px-0" style={{ maxWidth: "200px" }}>
+        <div
+          className="col-md-2 cl-12 px-0"
+          style={window.innerHeight > 768 ? { maxWidth: "200px" } : {}}
+        >
           <nav
             id="nested-nav"
-            className="navbar navbar-expand-xl flex-column align-items-stretch ps-2 pt-3 border-end sticky-top overflow-auto"
+            className="navbar navbar-expand-md flex-column align-items-stretch my-3 py-0 ps-md-2 border-end sticky-top overflow-auto"
+            style={
+              window.innerHeight > 769
+                ? { maxHeight: "100vh" }
+                : {
+                    maxHeight: "90vh",
+                    maxWidth: "80%",
+                    marginLeft: "10%",
+                    backgroundColor: "#b498d310",
+                  }
+            }
           >
-            <nav className="nav nav-pills flex-column">
+            <button
+              className="navbar-toggler"
+              style={{
+                backgroundColor: "#b498d310",
+                borderWidth: "5px",
+                borderRadius: "10px",
+              }}
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#pageInfo"
+            >
+              <span>On this page</span>
+            </button>
+            <nav id="pageInfo" className="nav nav-pills flex-column">
               {sectionsArr.map((section) => {
                 return section.map((subSection, index) => {
-                  let className = "nav-link ms-3 text-secondary";
+                  let className = "nav-item nav-link ms-3 text-secondary";
                   if (index == 0)
-                    className = "nav-link text-secondary-emphasis";
+                    className = "nav-item nav-link text-secondary-emphasis";
                   if (index == section.length - 1) className += " mb-1";
                   return (
                     <a
@@ -84,7 +109,10 @@ export default function NestedNavigation() {
             </nav>
           </nav>
         </div>
-        <div className="col-9 ms-4">
+        <div
+          className="col-md-9 px-4"
+          style={{ overflow: "hidden", overflowWrap: "break-word" }}
+        >
           <div
             ref={(element) => {
               refs.current.cervical = element!;
@@ -241,8 +269,7 @@ export default function NestedNavigation() {
               <li>
                 <a
                   className="purple"
-                  href="https://cancer.ca/en/cancer-information/find-cancer-early/get-screened-for-cervical-cancer/everything-you-ever-wanted-to-know-about-having-a-pap-test
-"
+                  href="https://cancer.ca/en/cancer-information/find-cancer-early/get-screened-for-cervical-cancer/everything-you-ever-wanted-to-know-about-having-a-pap-test"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -253,8 +280,7 @@ export default function NestedNavigation() {
               <li>
                 <a
                   className="purple"
-                  href="https://www.tobaccofreequebec.ca/iquitnow
-"
+                  href="https://www.tobaccofreequebec.ca/iquitnow"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -346,7 +372,9 @@ export default function NestedNavigation() {
             <p>
               If you do not have a healthcare provider, you can email{" "}
               <a
-                style={{ color: "black" }}
+                style={{
+                  color: "black",
+                }}
                 href="mailto:depistagecancerpoumon@ssss.gouv.ca"
               >
                 depistagecancerpoumon@ssss.gouv.ca
@@ -750,6 +778,87 @@ export default function NestedNavigation() {
           </div>
           <div
             ref={(element) => {
+              refs.current.abdominalAorticAneurysm = element!;
+            }}
+            id="Abdominal Aortic Aneurysm"
+          >
+            <h1>Abdominal Aortic Aneurysm</h1>
+            <p>
+              The abdominal aorta is the main blood vessel in the body that
+              connects to the heart. An Abdominal Aortic Aneurysm (AAA) is a
+              condition where a portion of the vessel becomes enlarged. If not
+              caught early on, it has the potential to get larger and may lead
+              to rupture, which comes with a risk of life-threatening bleeding.
+              <sup>1</sup> The Canadian task force recommends that men 65 to 80
+              years of age have a one-time screening for AAA with an ultrasound
+              to reduce the risk of AAA negative events<sup>2</sup>.
+            </p>
+            <p>
+              In addition to screening, taking steps to protect yourself from
+              developing an abdominal aortic aneurysm is crucial. There are
+              various things that you can do to help decrease your risk of
+              developing an AAA or reduce its growth. There are certain steps
+              you can take to help reduce your risk such as cutting down and
+              ultimately quitting tobacco smoking, which has been shown to play
+              a big role in the development of AAA.<sup>3</sup> Please visit{" "}
+              <a
+                className="purple"
+                href="https://www.tobaccofreequebec.ca/iquitnow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tobacco-Free Quebec
+              </a>{" "}
+              if you would like support to quit smoking.<sup>4</sup>
+            </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.nhs.uk/conditions/abdominal-aortic-aneurysm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abdominal aortic aneurysm. nhs.uk.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abdominal Aortic Aneurysm (2017) - Canadian Task Force on
+                  Preventive Health Care.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://doi.org/10.1001/archinte.160.10.1425"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lederle FA. The Aneurysm Detection and Management Study
+                  Screening Program: Validation Cohort and Final Results.
+                </a>
+              </li>
+              <li>
+                <a
+                  className="purple"
+                  href="https://www.tobaccofreequebec.ca/iquitnow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  I Quit Now - Tobacco-Free Quebec.
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div
+            ref={(element) => {
               refs.current.fragilityFractures = element!;
             }}
             id="Fragility Fractures"
@@ -943,87 +1052,6 @@ export default function NestedNavigation() {
                   Al-Bashaireh AM, Haddad LG, Weaver M, Chengguo X, Kelly DL,
                   Yoon S. The Effect of Tobacco Smoking on Bone Mass: An
                   Overview of Pathophysiologic Mechanisms.
-                </a>
-              </li>
-              <li>
-                <a
-                  className="purple"
-                  href="https://www.tobaccofreequebec.ca/iquitnow"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  I Quit Now - Tobacco-Free Quebec.
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div
-            ref={(element) => {
-              refs.current.abdominalAorticAneurysm = element!;
-            }}
-            id="Abdominal Aortic Aneurysm"
-          >
-            <h1>Abdominal Aortic Aneurysm</h1>
-            <p>
-              The abdominal aorta is the main blood vessel in the body that
-              connects to the heart. An Abdominal Aortic Aneurysm (AAA) is a
-              condition where a portion of the vessel becomes enlarged. If not
-              caught early on, it has the potential to get larger and may lead
-              to rupture, which comes with a risk of life-threatening bleeding.
-              <sup>1</sup> The Canadian task force recommends that men 65 to 80
-              years of age have a one-time screening for AAA with an ultrasound
-              to reduce the risk of AAA negative events<sup>2</sup>.
-            </p>
-            <p>
-              In addition to screening, taking steps to protect yourself from
-              developing an abdominal aortic aneurysm is crucial. There are
-              various things that you can do to help decrease your risk of
-              developing an AAA or reduce its growth. There are certain steps
-              you can take to help reduce your risk such as cutting down and
-              ultimately quitting tobacco smoking, which has been shown to play
-              a big role in the development of AAA.<sup>3</sup> Please visit{" "}
-              <a
-                className="purple"
-                href="https://www.tobaccofreequebec.ca/iquitnow"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Tobacco-Free Quebec
-              </a>{" "}
-              if you would like support to quit smoking.<sup>4</sup>
-            </p>
-            <h3>Bibliography</h3>
-            <ol>
-              <li>
-                <a
-                  className="purple"
-                  href="https://www.nhs.uk/conditions/abdominal-aortic-aneurysm/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Abdominal aortic aneurysm. nhs.uk.
-                </a>
-              </li>
-              <li>
-                <a
-                  className="purple"
-                  href="https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Abdominal Aortic Aneurysm (2017) - Canadian Task Force on
-                  Preventive Health Care.
-                </a>
-              </li>
-              <li>
-                <a
-                  className="purple"
-                  href="https://doi.org/10.1001/archinte.160.10.1425"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Lederle FA. The Aneurysm Detection and Management Study
-                  Screening Program: Validation Cohort and Final Results.
                 </a>
               </li>
               <li>
