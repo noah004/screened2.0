@@ -24,10 +24,16 @@
   right: 3%;
   z-index: 99;
   border-color: #b498d3;
-  transition: all 0.5s;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.9;
+  backdrop-filter: blur(10px);
+  background-color: rgb(233, 234, 236);
 }
-
 .go-to-top-button:hover {
   border-color: #b498d3;
-  background-color: #f8f8f8;
+  background-color: rgb(223, 224, 227);
+}
+
+.inv {
+  opacity: 0 !important;
 }

@@ -25,16 +25,13 @@ export default function ScrollTopButton() {
     });
   }, []);
 
+  const className = "go-to-top-button btn " + (!show && "disabled inv");
+
   return (
     <div className="go-to-top-button">
-      {document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 200 ? (
-        <button className="go-to-top-button btn" onClick={onClick}>
-          <Image src={upArrow} alt="Go to top of the page" height={50} />
-        </button>
-      ) : (
-        ""
-      )}
+      <button className={className} onClick={onClick}>
+        <Image src={upArrow} alt="Go to top of the page" height={50} />
+      </button>
     </div>
   );
 }
