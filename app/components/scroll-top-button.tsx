@@ -1,6 +1,6 @@
 "use client";
-import "../../../public/styles/styles.css";
-import upArrow from "../../../public/images/upArrow.svg";
+import "../../public/styles/styles.css";
+import upArrow from "../../public/images/upArrow.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

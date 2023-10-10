@@ -1,7 +1,7 @@
 "use client";
 import "../../../public/styles/styles.css";
 import { useEffect, useRef, useState } from "react";
-import ScrollTopButton from "./scroll-top-button";
+import ScrollTopButton from "../../components/scroll-top-button";
 
 export default function NestedNavigation() {
   //set the underlined state:
