@@ -1,6 +1,7 @@
 "use client";
 import "../../../public/styles/styles.css";
 import { useEffect, useRef, useState } from "react";
+import ScrollTopButton from "./scroll-top-button";
 
 export default function NestedNavigation() {
   //set the underlined state:
@@ -29,7 +30,7 @@ export default function NestedNavigation() {
   //Create a reference object for all text sections
   const initialRef: { [key: string]: HTMLDivElement } = {};
   const refs = useRef(initialRef);
-
+  //Effect for underlining proper section
   useEffect(() => {
     const options = {
       root: null,
@@ -51,62 +52,86 @@ export default function NestedNavigation() {
     return () => observer.disconnect();
   }, []);
 
+  //Keeping track of window size
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
+  }, []);
+
   return (
     //The nested navigation
     <div className="container-fluid">
+      <ScrollTopButton />
       <div className="row">
         <div
           className="col-md-2 cl-12 px-0"
-          style={window.innerHeight > 768 ? { maxWidth: "200px" } : {}}
+          style={windowWidth > 767 ? { maxWidth: "200px" } : {}}
         >
           <nav
             id="nested-nav"
-            className="navbar navbar-expand-md flex-column align-items-stretch my-3 py-0 ps-md-2 border-end sticky-top overflow-auto"
+            className={
+              (windowWidth <= 767 ? "bg-body-tertiary " : "") +
+              "navbar navbar-expand-md flex-column align-items-stretch my-3 ps-md-2 border-end sticky-top overflow-auto"
+            }
             style={
-              window.innerHeight > 769
-                ? { maxHeight: "100vh" }
+              windowWidth > 767
+                ? { maxHeight: "100vh", minHeight: "90vh" }
                 : {
                     maxHeight: "90vh",
                     maxWidth: "80%",
                     marginLeft: "10%",
-                    backgroundColor: "#b498d310",
+                    padding: "0px",
+                    borderRadius: "7px",
                   }
             }
           >
-            <button
-              className="navbar-toggler"
-              style={{
-                backgroundColor: "#b498d310",
-                borderWidth: "5px",
-                borderRadius: "10px",
-              }}
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#pageInfo"
-            >
-              <span>On this page</span>
-            </button>
-            <nav id="pageInfo" className="nav nav-pills flex-column">
-              {sectionsArr.map((section) => {
-                return section.map((subSection, index) => {
-                  let className = "nav-item nav-link ms-3 text-secondary";
-                  if (index == 0)
-                    className = "nav-item nav-link text-secondary-emphasis";
-                  if (index == section.length - 1) className += " mb-1";
-                  return (
-                    <a
-                      key={subSection}
-                      className={
-                        className + (underlined[subSection] ? " underline" : "")
-                      }
-                      href={"#" + subSection}
-                    >
-                      {subSection}
-                    </a>
-                  );
-                });
-              })}
-            </nav>
+            <div className={windowWidth <= 767 ? "container-fluid px-0" : ""}>
+              <button
+                className="navbar-toggler nested-nav-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#pageInfo"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span>On this page</span>
+              </button>
+              <nav
+                id="pageInfo"
+                className="nav nav-pills navbar-collapse collapse flex-column"
+              >
+                <div>
+                  {sectionsArr.map((section) => {
+                    return section.map((subSection, index) => {
+                      let className = "nav-item nav-link ms-3 text-secondary";
+                      if (index == 0)
+                        className = "nav-item nav-link text-secondary-emphasis";
+                      if (index == section.length - 1) className += " mb-1";
+                      return (
+                        <a
+                          key={subSection}
+                          className={
+                            className +
+                            (underlined[subSection] && windowWidth > 767
+                              ? " underline"
+                              : "")
+                          }
+                          style={
+                            windowWidth <= 767
+                              ? { textAlign: "center", alignSelf: "center" }
+                              : {}
+                          }
+                          href={"#" + subSection}
+                        >
+                          {subSection}
+                        </a>
+                      );
+                    });
+                  })}
+                </div>
+              </nav>
+            </div>
           </nav>
         </div>
         <div

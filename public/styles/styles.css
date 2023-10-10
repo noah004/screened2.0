@@ -5,3 +5,29 @@
 .purple {
   color: #b498d3;
 }
+
+.nested-nav-button {
+  width: 100%;
+  border-width: 5px;
+  transition: background-color 0.25s ease-in-out;
+  background-color: rgb(233, 234, 236);
+}
+
+.nested-nav-button:focus {
+  background-color: rgb(223, 224, 227);
+  box-shadow: none;
+}
+
+.go-to-top-button {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 99;
+  border-color: #b498d3;
+  transition: all 0.5s;
+}
+
+.go-to-top-button:hover {
+  border-color: #b498d3;
+  background-color: #f8f8f8;
+}

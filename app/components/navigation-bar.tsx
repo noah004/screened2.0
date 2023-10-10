@@ -31,7 +31,7 @@ export default function NavigationBar({
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
-            <li className="nav-item mr-2">
+            <li className="nav-item me-2">
               <a
                 className={"nav-link " + (currentPage === "" && "active")}
                 href="."
@@ -39,7 +39,7 @@ export default function NavigationBar({
                 Home
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item me-3">
               <a
                 className={
                   "nav-link " + (currentPage === "pamphlet" && "active")
@@ -49,7 +49,7 @@ export default function NavigationBar({
                 Pamphlet
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item me-3">
               <a
                 className={
                   "nav-link " + (currentPage === "for-patients" && "active")
@@ -59,7 +59,7 @@ export default function NavigationBar({
                 For Patients
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item me-3">
               <a
                 className={
                   "nav-link " +
@@ -70,7 +70,7 @@ export default function NavigationBar({
                 For Medical Professionals
               </a>
             </li>
-            <li className="nav-item ml-2">
+            <li className="nav-item">
               <a
                 className={
                   "nav-link " + (currentPage === "about-us" && "active")
