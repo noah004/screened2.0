@@ -1,6 +1,7 @@
 import NavigationBar from "../components/navigation-bar";
 import forMedicalProfessionalsSVG from "../../public/images/ForMedicalProfessionals.svg";
 import Image from "next/image";
+import NestedNavigation from "./components/nested-navigation";
 
 export default function Page() {
   return (
@@ -15,6 +16,7 @@ export default function Page() {
           />
         </div>
       </div>
+      <NestedNavigation />
     </>
   );
 }
