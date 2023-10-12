@@ -912,7 +912,7 @@ export default function NestedNavigation() {
               score and a Bone Mineral Density (BMD) test. The most common test
               that measures BMD is the dual energy x-ray absorptiometry (DXA),
               and involves lying flat on a table for several minutes while an
-              x-ray scans your spine or hip(s).<sup>4</sup> It's important to
+              x-ray scans your spine or hip(s).<sup>4</sup> It&apos;s important to
               note that screening for fragility fractures carries the potential
               for overdiagnosis and adverse effects from treatment.
             </p>
