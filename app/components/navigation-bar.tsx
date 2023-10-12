@@ -10,7 +10,7 @@ export default function NavigationBar({
     <nav
       className="navbar navbar-dark navbar-expand-md"
       style={{
-        backgroundColor: "#b498d3",
+        backgroundColor: "#be92f1",
         fontSize: "18px",
       }}
     >
