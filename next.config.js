@@ -7,5 +7,5 @@ const nextConfig   = {
     path: '',
   },
   assetPrefix: './',
-  output: 'export'
+  output: 'export',
 };
