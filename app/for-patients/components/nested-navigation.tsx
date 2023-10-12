@@ -54,7 +54,7 @@ export default function NestedNavigation() {
   }, []);
 
   //Keeping track of window size
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(500);
   useEffect(() => {
     window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
   }, []);
