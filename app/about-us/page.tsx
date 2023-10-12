@@ -19,11 +19,37 @@ export default function Page() {
       <div className="container text-center">
         <div className="container">
           <div className="box">
-            <Image src={kotyJPG} alt="Koty Negreanu" height={"100"} />
+            <Image
+              className="profile-image"
+              src={kotyJPG}
+              alt="Koty Negreanu"
+              height={"100"}
+            />
+            <div>
+              <h3>Koty Negreanu, Co-Founder</h3>
+              <p>
+                “I&apos;m a medical student who is extremely passionate about
+                screening and preventative health. My goal is to help make
+                information easily accessible so that patients and medical
+                professionals can work together to make informed decisions about
+                health.”
+              </p>
+            </div>
           </div>
         </div>
         <div className="container">
-          <Image src={elianaJPG} height={"100"} alt="Eliana rohr" />
+          <div className="box">
+            <Image
+              className="profile-image"
+              src={elianaJPG}
+              height={"100"}
+              alt="Eliana rohr"
+            />
+            <div>
+              <h3>Eliana Rohr, Co-Founder</h3>
+              <p>BLUUUURBBBBBBB</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
