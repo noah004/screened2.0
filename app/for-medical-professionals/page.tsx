@@ -1,3 +1,4 @@
+"use client"
 import NavigationBar from "../components/navigation-bar";
 import forMedicalProfessionalsSVG from "../../public/images/ForMedicalProfessionals.svg";
 import Image from "next/image";
