@@ -8,7 +8,11 @@ export default function Page() {
       <NavigationBar currentPage={"pamphlet"} />
       <div className="container-fluid">
         <div className="row">
-          <Image src={pamphletSVG} alt="Screened logo" height={100} />
+          <Image
+            src={pamphletSVG}
+            alt="Screened logo"
+            style={{ maxHeight: "100px", height: "auto" }}
+          />
         </div>
       </div>
     </>

@@ -9,7 +9,11 @@ export default function Page() {
       <NavigationBar currentPage={"for-patients"} />
       <div className="container-fluid">
         <div className="row">
-          <Image src={forPatientsSVG} alt="For patients" height={100} />
+          <Image
+            src={forPatientsSVG}
+            alt="For patients"
+            style={{ maxHeight: "100px", height: "auto" }}
+          />
         </div>
       </div>
       <NestedNavigation />
