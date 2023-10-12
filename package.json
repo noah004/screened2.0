@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next output"
+    "export": "next export"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
