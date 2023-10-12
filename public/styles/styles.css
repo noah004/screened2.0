@@ -37,7 +37,7 @@
   opacity: 0 !important;
 }
 
-.box {
+.home-box {
   position: relative;
   min-width: 280px;
   width: 40%;
@@ -54,16 +54,16 @@
   border: solid;
   box-shadow: 3px 3px;
 }
-.box:hover {
+.home-box:hover {
   background-color: #bc9de2;
   cursor: pointer;
 }
 
-.box:active {
+.home-box:active {
   background-color: #bea8d8;
 }
 
-.inner-box {
+.inner-home-box {
   width: 90%;
   height: 65%;
   background-color: #e3cbff;
@@ -93,4 +93,11 @@
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.profile-image {
+  border: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: black;
 }

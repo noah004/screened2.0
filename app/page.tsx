@@ -38,9 +38,9 @@ export default function Page() {
           </div>
           <div className="col">
             <div className="container">
-              <div className="box">
+              <div className="home-box">
                 <Image src={forPatientsSVG} alt="For patients" width={200} />
-                <div className="inner-box">
+                <div className="inner-home-box">
                   <h5>General Population</h5>
                   Find comprehensive screening information for diseases. Make
                   informed decisions for your health.
@@ -49,13 +49,13 @@ export default function Page() {
                   <span></span>
                 </a>
               </div>
-              <div className="box">
+              <div className="home-box">
                 <Image
                   src={forMedicalProfessionalsSVG}
                   alt="For patients"
                   width={200}
                 />
-                <div className="inner-box">
+                <div className="inner-home-box">
                   <h5 style={{ marginBottom: "0px" }}>
                     Physicians, Residents and Medical Students
                   </h5>
@@ -68,9 +68,9 @@ export default function Page() {
               </div>
             </div>
             <div className="container">
-              <div className="box">
+              <div className="home-box">
                 <Image src={pamphletSVG} alt="For patients" width={200} />
-                <div className="inner-box">
+                <div className="inner-home-box">
                   <h5>Everyone</h5>
                   Download our screening “pamphlet”, in order to keep track of
                   your previous and future screening tests.
@@ -79,9 +79,9 @@ export default function Page() {
                   <span></span>
                 </a>
               </div>
-              <div className="box">
+              <div className="home-box">
                 <Image src={aboutUsSVG} alt="For patients" width={200} />
-                <div className="inner-box">
+                <div className="inner-home-box">
                   <h5>Who are we?</h5>
                   <p>Click here to learn about Screened!</p>
                 </div>
