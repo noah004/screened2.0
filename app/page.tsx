@@ -19,12 +19,14 @@ export default function Page() {
             style={{ maxHeight: "200px", height: "auto" }}
           />
         </div>
-        <div className="row">
+        <div style={{ maxWidth: "2000px", margin: "auto" }} className="row">
           <div
             className="col-xl-4 col-l-3"
-            style={{ margin: "60px 0px 0px 3%" }}
+            style={{
+              margin: "60px 0px 0px 3%",
+            }}
           >
-            <h2>Welcome to Screened!</h2>
+            <h1>Welcome to Screened!</h1>
             <br />
             <h3>
               Our goal is to share knowledge about screening and preventative
@@ -42,8 +44,8 @@ export default function Page() {
                 <Image src={forPatientsSVG} alt="For patients" width={200} />
                 <div className="inner-home-box">
                   <h5>General Population</h5>
-                  Find comprehensive screening information for diseases. Make
-                  informed decisions for your health.
+                  Comprehensive screening information to help make educated
+                  decisions about your health.
                 </div>
                 <a href="./for-patients" className="div-link">
                   <span></span>
@@ -59,8 +61,7 @@ export default function Page() {
                   <h5 style={{ marginBottom: "0px" }}>
                     Physicians, Residents and Medical Students
                   </h5>
-                  Information on all screened diseases: who/when to screen,
-                  results and next steps.
+                  A guide for screening: population, frequency and management.
                 </div>
                 <a href="./for-medical-professionals" className="div-link">
                   <span></span>
@@ -72,7 +73,7 @@ export default function Page() {
                 <Image src={pamphletSVG} alt="For patients" width={200} />
                 <div className="inner-home-box">
                   <h5>Everyone</h5>
-                  Download our screening “pamphlet”, in order to keep track of
+                  Download our screening pamphlet, in order to keep track of
                   your previous and future screening tests.
                 </div>
                 <a href="./pamphlet" className="div-link">
