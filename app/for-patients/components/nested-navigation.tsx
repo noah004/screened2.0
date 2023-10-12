@@ -962,7 +962,7 @@ export default function NestedNavigation() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Canada's Physical Activity guides
+                  Canada&apos;s Physical Activity guides
                 </a>
               </li>
               <li>
