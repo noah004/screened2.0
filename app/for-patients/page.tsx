@@ -3,6 +3,7 @@ import NavigationBar from "../components/navigation-bar";
 import forPatientsSVG from "../../public/images/ForPatients.svg";
 import Image from "next/image";
 import NestedNavigation from "./components/nested-navigation";
+import { useEffect, useState } from "react";
 
 export default function Page() {
   return (
