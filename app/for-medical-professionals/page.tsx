@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import NavigationBar from "../components/navigation-bar";
 import forMedicalProfessionalsSVG from "../../public/images/ForMedicalProfessionals.svg";
 import Image from "next/image";
@@ -7,7 +7,10 @@ import NestedNavigation from "./components/nested-navigation";
 export default function Page() {
   return (
     <>
-      <NavigationBar currentPage={"for-medical-professionals"} />
+      <NavigationBar
+        color="rgb(171 216 131)"
+        currentPage="for-medical-professionals"
+      />
       <div className="container-fluid">
         <div className="row">
           <Image
@@ -17,7 +20,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <NestedNavigation />
+      <NestedNavigation colorTheme="green" />
     </>
   );
 }

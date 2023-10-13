@@ -7,8 +7,13 @@ import papTestPNG from "../images/pap-test.png";
 import CHEPCriteriaPNG from "../images/chep-criteria.png";
 import initiatingStatins1PNG from "../images/initiating-statins-part1.png";
 import initiatingStatins2PNG from "../images/initiating-statins-part2.png";
+import { useMemo } from "react";
 
-export default function NestedNavigation() {
+export default function NestedNavigation({
+  colorTheme,
+}: {
+  colorTheme: string;
+}) {
   //set the underlined state:
   const sectionsArr: Array<Array<string>> = [
     // the first string in each array is the section,
@@ -59,15 +64,16 @@ export default function NestedNavigation() {
   }, []);
 
   //Keeping track of window size
-  const [windowWidth, setWindowWidth] = useState(500);
-  useEffect(() => {
+  const [windowWidth, setWindowWidth] = useState(0);
+  useMemo(() => {
+    setWindowWidth(window.innerWidth);
     window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
   }, []);
 
   return (
     //The nested navigation
     <div className="container-fluid">
-      <ScrollTopButton />
+      <ScrollTopButton colorTheme="green" />
       <div className="row">
         <div
           className="col-md-2 cl-12 px-0"
@@ -155,7 +161,7 @@ export default function NestedNavigation() {
               In average risk individuals, It is recommended to start screening
               at age 50 with a mammogram every 2 years.<sup>1</sup>
             </p>
-            <p>
+            <span>
               Screening may begin earlier for individuals who are at higher risk
               of breast cancer. This may include:<sup>2</sup>
               <ul>
@@ -169,12 +175,12 @@ export default function NestedNavigation() {
                   the last 8 years
                 </li>
               </ul>
-            </p>
+            </span>
             <h3>Bibliography</h3>
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/breast-cancer-update/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -185,7 +191,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://cancer.ca/en/cancer-information/cancer-types/breast/risks
 "
                   target="_blank"
@@ -237,17 +243,16 @@ export default function NestedNavigation() {
               Please visit this{" "}
               <a
                 href="https://www.youtube.com/watch?v=uJXoL1RbVi0&t=135s"
-                className="purple"
+                className={colorTheme}
               >
                 video
               </a>{" "}
-              for <b style={{ color: "red" }}>streps</b> on performing a pap
-              test.
+              for steps on performing a pap test.
             </p>
             <p>
               Guidelines across all provinces can be found{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.partnershipagainstcancer.ca/topics/cervical-cancer-screening-in-canada-2021-2022/programs/guidelines/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -260,7 +265,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1503/cmaj.121505"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -271,7 +276,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.inspq.qc.ca/sites/default/files/publications/1371_guidelinescervicalcancerscreeningqc.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -282,7 +287,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.quebec.ca/en/health/advice-and-prevention/vaccination/human-papillomavirus-hpv-vaccination-program/eligibility"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -313,7 +318,7 @@ export default function NestedNavigation() {
               A flexible sigmoidoscopy may also be used for screening. If
               negative, it can be repeated every 10 years.<sup>2</sup>
             </p>
-            <p>
+            <span>
               Indications for semi elective colonoscopy (&lt;60 days):
               <sup>3</sup>
               <ol>
@@ -328,8 +333,8 @@ export default function NestedNavigation() {
                 <li>Suspicion of occult colorectal cancer</li>
                 <li>Diverticulitis in the post acute phase</li>
               </ol>
-            </p>
-            <p>
+            </span>
+            <span>
               Indications for an elective colonoscopy in &lt; 6 months:
               <ol>
                 <li>
@@ -351,7 +356,7 @@ export default function NestedNavigation() {
                         </li>
                       </ul>
                     </li>
-                  </ul>{" "}
+                  </ul>
                 </li>
                 <li>
                   Individuals less than 40 years old with rectal bleeding with
@@ -361,12 +366,12 @@ export default function NestedNavigation() {
                   Individuals with chronic constipation or chronic diarrhea
                 </li>
               </ol>
-            </p>
+            </span>
             <h3>Bibliography</h3>
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.partnershipagainstcancer.ca/topics/colorectal-cancer-screening-in-canada-2021-2022/programs/guidelines/"
                   target="_blank"
                   rel="noopener norefeerer"
@@ -377,7 +382,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/colorectal-cancer/"
                   target="_blank"
                   rel="noopener norefeerer"
@@ -388,7 +393,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="http://msssa4.msss.gouv.qc.ca/intra/formres.nsf/961885cb24e4e9fd85256b1e00641a29/2f9c2fbcfc52238a85257a08004ff440/$FILE/AH-702A_DT9251(2017-12)D.pdf"
                   target="_blank"
                   rel="noopener norefeerer"
@@ -432,7 +437,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -443,7 +448,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/s0140-6736(21)01169-7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -457,7 +462,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1038/nrc2703"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -485,7 +490,7 @@ export default function NestedNavigation() {
             <p>
               One can use the FINDRISC<sup>2</sup> to assess the risk.
             </p>
-            <p>
+            <span>
               Depending on the results with the validated tool, the following
               recommendations are:
               <ul>
@@ -499,7 +504,7 @@ export default function NestedNavigation() {
                   <b>Very high risk</b>: A1C every year
                 </li>
               </ul>
-            </p>
+            </span>
             <p>
               Note that A1C is the preferred screening test, but fasting glucose
               measurement and glucose tolerance test can be used as
@@ -526,7 +531,7 @@ export default function NestedNavigation() {
               encouraged for all patients to make efforts to quit smoking.
               <sup>7</sup> Please refer your patients to{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -541,13 +546,13 @@ export default function NestedNavigation() {
               discussion of risk reduction strategies for diabetes management,
               to hopefully encourage longitudinal adoption of these behaviors.
             </p>
-            <p>
+            <span>
               Motivational interviewing techniques for diet, exercise weight and
               smoking cessation:
               <ul>
                 <li>
                   <a
-                    className="purple"
+                    className={colorTheme}
                     href="https://media.ruddcenter.uconn.edu/PDFs/MotivationalInterviewing.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -557,7 +562,7 @@ export default function NestedNavigation() {
                 </li>
                 <li>
                   <a
-                    className="purple"
+                    className={colorTheme}
                     href="https://ottawamodel.ottawaheart.ca/sites/ottawamodel.ottawaheart.ca/files/omsc/docs/3.increasingmotivationtostopsmoking.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -567,12 +572,12 @@ export default function NestedNavigation() {
                   </a>
                 </li>
               </ul>
-            </p>
+            </span>
             <h3>Bibliography</h3>
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/type-2-diabetes/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -583,7 +588,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.mdcalc.com/calc/4000/findrisc-finnish-diabetes-risk-score"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -593,7 +598,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://guidelines.diabetes.ca/cpg/chapter4"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -604,7 +609,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.3945%2Fjn.115.218487"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -616,7 +621,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1056/nejmoa012512"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -627,7 +632,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://myhealth.alberta.ca:443/Health/aftercareinformation/pages/conditions.aspx?hwid=ad1603"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -637,7 +642,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.7326/0003-4819-152-1-201001050-00005"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -673,7 +678,7 @@ export default function NestedNavigation() {
             <Image
               src={CHEPCriteriaPNG}
               alt="Hypertension Canada Guidline Diagram"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto", marginBottom: "30px" }}
             />
             <p>
               While patients are in office, it may be prudent to calculate the
@@ -688,7 +693,7 @@ export default function NestedNavigation() {
             <p>
               Demonstrative calculator to be used with patients:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://cvdcalculator.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -700,7 +705,7 @@ export default function NestedNavigation() {
             <p>
               Framingham risk score calculator:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.mdcalc.com/calc/38/framingham-risk-score-hard-coronary-heart-disease"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -713,7 +718,7 @@ export default function NestedNavigation() {
               For a comprehensive overview on management of hypertension in a
               primary care setting, please visit the following article:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.cfp.ca/content/65/10/725"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -733,7 +738,7 @@ export default function NestedNavigation() {
             <p>
               Brochure to give to patients:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_BPActionPlan.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -742,12 +747,11 @@ export default function NestedNavigation() {
               </a>
               .
             </p>
-            <p>
-              <h4>Proper assessment of manual BP reading:</h4>
+            <h4>Proper assessment of manual BP reading:</h4>
+            <span>
               *Of note, Measurement using validated electronic (oscillometric)
               upper arm devices is preferred over auscultation.<sup>7</sup>
-            </p>
-            <p>
+              <br />
               Before beginning, make sure that your patient has:
               <ul>
                 <li>Legs uncrossed.</li>
@@ -758,7 +762,7 @@ export default function NestedNavigation() {
                   reading.
                 </li>
               </ul>
-            </p>
+            </span>
             <h5>
               Steps for auscultation method of blood pressure assessment:
               <sup>8</sup>
@@ -796,12 +800,11 @@ export default function NestedNavigation() {
                 </ol>
               </li>
             </ol>
-
             <h3>Bibliography</h3>
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -812,7 +815,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://hypertension.ca/guidelines/diagnosis-assessment/diagnosis-assessment-diagnosis/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -823,7 +826,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.mdcalc.com/calc/38/framingham-risk-score-hard-coronary-heart-disease"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -833,7 +836,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://cvdcalculator.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -843,7 +846,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.nhlbi.nih.gov/education/dash-eating-plan"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -853,7 +856,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.cjca.2020.02.086"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -866,7 +869,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://hypertension.ca/guidelines/diagnosis-assessment/measuring-blood-pressure/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -877,7 +880,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.practicalclinicalskills.com/blood-pressure-measurement"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -908,7 +911,7 @@ export default function NestedNavigation() {
               accepted as a key modifiable risk factor in the development of
               AAA.<sup>3</sup> You can direct your patients to{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -921,7 +924,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -932,7 +935,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.3390/biomedicines10010094"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -944,7 +947,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1001/archinte.160.10.1425"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -970,7 +973,7 @@ export default function NestedNavigation() {
             <p>
               One can start by using a fracture risk estimation tool, such as{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://frax.canadiantaskforce.ca/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1008,7 +1011,7 @@ export default function NestedNavigation() {
               For a more comprehensive overview on shared decision making,
               please refer to the following article:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://doi.org/10.1016/j.jocd.2010.06.005"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1023,7 +1026,7 @@ export default function NestedNavigation() {
               performed, you should re-estimate the risk by adding the BMD risk
               score to the calculation:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://frax.shef.ac.uk/FRAX/index.aspx"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1055,7 +1058,7 @@ export default function NestedNavigation() {
               provides a module for an overview of fall prevention and
               assessment:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.rgpeo.com/stop-falls/health-professionals/#education-modules."
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1068,7 +1071,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/fragility-fractures/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1079,7 +1082,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.jocd.2010.06.005"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1090,7 +1093,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://osteoporosis.ca/vitamin-d/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1100,7 +1103,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.3390/healthcare5040085"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1112,7 +1115,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/health-promotion/aging-seniors/publications/publications-general-public/seniors-falls-canada-second-report.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1129,7 +1132,7 @@ export default function NestedNavigation() {
             id={"Dyslipidemia"}
           >
             <h1>Dyslipidemia</h1>
-            <p>
+            <span>
               According to the canadian cardiovascular society guidelines, lipid
               screening is recommended for men and women above 40 years of age,
               or at any age with one of the following risk factors:<sup>1</sup>
@@ -1154,7 +1157,7 @@ export default function NestedNavigation() {
                 <li>COPD</li>
                 <li>History of hypertensive disorder of pregnancy</li>
               </ul>
-            </p>
+            </span>
             <p>
               Screening includes a detailed history and physical exam, a
               standard non fasting lipid profile including: TC, LDL-C, HDL-C,
@@ -1166,7 +1169,7 @@ export default function NestedNavigation() {
               used to calculate their risk of major cardiovascular events.
               Patients will be stratified into low, intermediate or high risk
               which will aid in guiding therapy. Please see{" "}
-              <a href="#initiatingStatins1PNG" className="purple">
+              <a href="#initiatingStatins1PNG" className={colorTheme}>
                 image
               </a>{" "}
               below for an approach to initiating statins.
@@ -1203,7 +1206,7 @@ export default function NestedNavigation() {
             <i>
               Image from:{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://ccs.ca/app/uploads/2022/07/2022-Lipids-Gui-PG-EN.pdf5"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1213,12 +1216,12 @@ export default function NestedNavigation() {
               </a>
               .
             </i>
-            <p style={{ marginTop: "30px" }}>
+            <span style={{ marginTop: "30px" }}>
               <b>Direct Links:</b>
               <ul>
                 <li>
                   <a
-                    className="purple"
+                    className={colorTheme}
                     href="https://www.mdcalc.com/calc/38/framingham-risk-score-hard-coronary-heart-disease"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -1228,7 +1231,7 @@ export default function NestedNavigation() {
                 </li>
                 <li>
                   <a
-                    className="purple"
+                    className={colorTheme}
                     href="https://myhealthcheckup.com/cvd/?la"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -1237,12 +1240,12 @@ export default function NestedNavigation() {
                   </a>
                 </li>
               </ul>
-            </p>
+            </span>
             <h3>Bibliography</h3>
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.cjca.2021.03.016"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1255,7 +1258,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.pcad.2018.05.004"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-      <NavigationBar currentPage={"pamphlet"} />
+      <NavigationBar color="rgb(146,190,241)" currentPage={"pamphlet"} />
       <div className="container-fluid">
         <div className="row">
           <Image

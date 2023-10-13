@@ -2,8 +2,13 @@
 import "../../../public/styles/styles.css";
 import { useEffect, useRef, useState } from "react";
 import ScrollTopButton from "../../components/scroll-top-button";
+import { useMemo } from "react";
 
-export default function NestedNavigation() {
+export default function NestedNavigation({
+  colorTheme,
+}: {
+  colorTheme: string;
+}) {
   //set the underlined state:
   const sectionsArr: Array<Array<string>> = [
     // the first string in each array is the section,
@@ -54,15 +59,15 @@ export default function NestedNavigation() {
   }, []);
 
   //Keeping track of window size
-  const [windowWidth, setWindowWidth] = useState(500);
-  useEffect(() => {
-    window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
+  const [windowWidth, setWindowWidth] = useState(0);
+  useMemo(() => {
+    setWindowWidth(window.innerWidth);
   }, []);
 
   return (
     //The nested navigation
     <div className="container-fluid">
-      <ScrollTopButton />
+      <ScrollTopButton colorTheme="orange" />
       <div className="row">
         <div
           className="col-md-2 cl-12 px-0"
@@ -183,7 +188,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://cancer.ca/en/cancer-information/cancer-types/breast/statistics"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -194,7 +199,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.cdc.gov/cancer/breast/basic_info/risk_factors.htm"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -261,7 +266,7 @@ export default function NestedNavigation() {
               than those who don&apos;t smoke. Speak to your health care
               professional about smoking cessation or visit{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -275,7 +280,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/chronic-diseases/cancer/cervical-cancer.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -285,7 +290,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.cancer.org/cancer/types/cervical-cancer/causes-risks-prevention/risk-factors.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -296,7 +301,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://cancer.ca/en/cancer-information/find-cancer-early/get-screened-for-cervical-cancer/everything-you-ever-wanted-to-know-about-having-a-pap-test"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -307,7 +312,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.tobaccofreequebec.ca/iquitnow"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -365,7 +370,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://cancer.ca/en/cancer-information/cancer-types/colorectal/statistics"
                   target="_blank"
                   rel="noopener norefeerer"
@@ -417,7 +422,7 @@ export default function NestedNavigation() {
               Cigarette smoking is the leading risk factor for lung cancer.
               Quitting at any age can lower this risk. Please visit{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -430,7 +435,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="cancer.ca/en/cancer-information/cancer-types/lung/statistics"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -441,7 +446,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -497,7 +502,7 @@ export default function NestedNavigation() {
               encouraged to discuss with your healthcare provider what is a
               healthy weight for you. You may visit the{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://food-guide.canada.ca/en/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -514,7 +519,7 @@ export default function NestedNavigation() {
             <p>
               You can visit{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://guidelines.diabetes.ca/patient-resources"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -527,7 +532,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/publications/diseases-conditions/framework-diabetes-canada.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -537,7 +542,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.jcjd.2019.09.001"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -551,7 +556,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1007/s11892-017-0885-0"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -562,7 +567,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.7150/ijms.10001"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -574,7 +579,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/tools-resources/type-2-diabetes-2/type-2-diabetes-canrisk/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -585,7 +590,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://myhealth.alberta.ca:443/Health/aftercareinformation/pages/conditions.aspx?hwid=ad1603"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -595,7 +600,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://food-guide.canada.ca/en/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -605,7 +610,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1056/nejmoa012512"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -616,7 +621,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/chronic-diseases/diabetes/prevent-type-2-diabetes.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -680,7 +685,7 @@ export default function NestedNavigation() {
               home blood pressure measurements, and for an associated guide,
               please click{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://guidelines.hypertension.ca/wp-content/uploads/2023/03/HTC_BloodPressureLog_ENG_FILLABLE.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -706,7 +711,7 @@ export default function NestedNavigation() {
             <ul>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://guidelines.hypertension.ca/wp-content/uploads/2022/09/HTC_Brochure_BPActionPlan.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -716,7 +721,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.mountsinai.on.ca/care/fammed/patient-resources/hypertension/hypertension-brochure-blood-pressure-canada.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -726,7 +731,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.nhlbi.nih.gov/education/dash-eating-plan#:~:text=The%20DASH%20eating%20plan%20requires,beans%2C%20nuts%2C%20and%20vegetable%20oils"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -739,7 +744,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/hypertension-clinician-summary/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -750,7 +755,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/diseases/heart-health/high-blood-pressure/health-effects-high-blood-pressure.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -760,7 +765,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.heartandstroke.ca/en/heart-disease/risk-and-prevention/condition-risk-factors/high-blood-pressure/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -770,7 +775,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -780,7 +785,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/hypertension/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -791,7 +796,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.cjca.2020.02.086"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -830,7 +835,7 @@ export default function NestedNavigation() {
               ultimately quitting tobacco smoking, which has been shown to play
               a big role in the development of AAA.<sup>3</sup> Please visit{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -843,7 +848,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.nhs.uk/conditions/abdominal-aortic-aneurysm/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -853,7 +858,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/abdominal-aortic-aneurysm/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -864,7 +869,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1001/archinte.160.10.1425"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -875,7 +880,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.tobaccofreequebec.ca/iquitnow"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -944,7 +949,7 @@ export default function NestedNavigation() {
             <p>
               Quitting at any age can lower this risk. Please visit{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -957,7 +962,7 @@ export default function NestedNavigation() {
             <ul>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/health-promotion/healthy-living/physical-activity/physical-activity-tips-adults-18-64-years.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -967,7 +972,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="http://www.osteoporosis.ca/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -977,7 +982,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://osteoporosis.ca/calcium/#:~:text=Adults%20between%2019%2D50%20years,Rich%20Foods%20for%20some%20inspiration."
                   target="_blank"
                   rel="noopener noreferrer"
@@ -990,7 +995,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://osteoporosis.ca/facts-and-stats/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1000,7 +1005,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://canadiantaskforce.ca/guidelines/published-guidelines/fragility-fractures/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1011,7 +1016,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc1580372/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1022,7 +1027,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://osteoporosis.ca/bone-mineral-density-testing/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1032,7 +1037,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://frax.shef.ac.uk/FRAX/tool.aspx?country=9"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1042,7 +1047,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.mayoclinic.org/tests-procedures/bone-density-test/about/pac-20385273"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1052,7 +1057,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.canada.ca/en/public-health/services/chronic-diseases/osteoporosis.html"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1062,7 +1067,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.osteoporosis.ca/vitamin-d/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1072,7 +1077,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1155/2018/1206235"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1084,7 +1089,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.tobaccofreequebec.ca/iquitnow"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1143,7 +1148,7 @@ export default function NestedNavigation() {
               smoking at any age can lower the risk of cardiac events. Please
               visit{" "}
               <a
-                className="purple"
+                className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1156,7 +1161,7 @@ export default function NestedNavigation() {
             <ol>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.cdc.gov/cholesterol/ldl_hdl.htm"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1167,7 +1172,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.7326/aitc201712050"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1177,7 +1182,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.17269/cjph.104.3783"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1189,7 +1194,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1007/s11745-010-3408-1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1200,7 +1205,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1016/j.cjca.2021.03.016"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1213,7 +1218,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://myhealth.alberta.ca:443/Health/Pages/conditions.aspx?hwid=tr6155"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1223,7 +1228,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://doi.org/10.1001/archinte.167.10.999"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1234,7 +1239,7 @@ export default function NestedNavigation() {
               </li>
               <li>
                 <a
-                  className="purple"
+                  className={colorTheme}
                   href="https://www.tobaccofreequebec.ca/iquitnow"
                   target="_blank"
                   rel="noopener noreferrer"

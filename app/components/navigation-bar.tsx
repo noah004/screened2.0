@@ -3,14 +3,16 @@ import logo from "public/images/screened-cropped.png";
 
 export default function NavigationBar({
   currentPage,
+  color = "#be92f1",
 }: {
   currentPage: string;
+  color?: string;
 }) {
   return (
     <nav
       className="navbar navbar-dark navbar-expand-md"
       style={{
-        backgroundColor: "#be92f1",
+        backgroundColor: color,
         fontSize: "18px",
       }}
     >

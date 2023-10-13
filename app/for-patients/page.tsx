@@ -7,7 +7,7 @@ import NestedNavigation from "./components/nested-navigation";
 export default function Page() {
   return (
     <>
-      <NavigationBar currentPage={"for-patients"} />
+      <NavigationBar color="rgb(241,190,146)" currentPage={"for-patients"} />
       <div className="container-fluid">
         <div className="row">
           <Image
@@ -17,7 +17,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <NestedNavigation />
+      <NestedNavigation colorTheme="orange" />
     </>
   );
 }
