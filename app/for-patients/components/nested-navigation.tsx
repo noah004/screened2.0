@@ -68,7 +68,12 @@ export default function NestedNavigation({
       );
   }, []);
 
-  return (
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setShow(true), 4);
+  });
+
+  return show ? (
     //The nested navigation
     <div className="container-fluid">
       <ScrollTopButton colorTheme="orange" />
@@ -1256,5 +1261,5 @@ export default function NestedNavigation({
         </div>
       </div>
     </div>
-  );
+  ) : null;
 }
