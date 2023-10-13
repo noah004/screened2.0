@@ -71,7 +71,7 @@ export default function NestedNavigation({
   const [show, setShow] = useState(false);
   useEffect(() => {
     setTimeout(() => setShow(true), 4);
-  });
+  }, [show]);
 
   return show ? (
     //The nested navigation
