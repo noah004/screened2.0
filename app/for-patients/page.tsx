@@ -6,7 +6,11 @@ import NestedNavigation from "./components/nested-navigation";
 import { useEffect, useState } from "react";
 
 export default function Page() {
-  return (
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setShow(true), 4);
+  }, [show]);
+  return show ? (
     <>
       <NavigationBar color="rgb(241,190,146)" currentPage={"for-patients"} />
       <div className="container-fluid">
@@ -20,5 +24,5 @@ export default function Page() {
       </div>
       <NestedNavigation colorTheme="orange" />
     </>
-  );
+  ) : null;
 }
