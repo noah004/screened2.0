@@ -7,6 +7,11 @@ export default function NestedNavigation({
 }: {
   colorTheme: string;
 }) {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setShow(true), 4);
+  }, [show]);
+
   //set the underlined state:
   const sectionsArr: Array<Array<string>> = [
     // the first string in each array is the section,
@@ -54,7 +59,7 @@ export default function NestedNavigation({
       observer.observe(ref);
     });
     return () => observer.disconnect();
-  }, []);
+  }, [show]);
 
   //Keeping track of window size
   const [windowWidth, setWindowWidth] = useState(0);
@@ -70,11 +75,6 @@ export default function NestedNavigation({
         setWindowWidth(window.innerWidth)
       );
   }, []);
-
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    setTimeout(() => setShow(true), 4);
-  }, [show]);
 
   return show ? (
     //The nested navigation
