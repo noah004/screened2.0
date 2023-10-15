@@ -2,7 +2,6 @@
 import "../../../public/styles/styles.css";
 import { useEffect, useRef, useState } from "react";
 import ScrollTopButton from "../../components/scroll-top-button";
-import { useLayoutEffect } from "react";
 export default function NestedNavigation({
   colorTheme,
 }: {
@@ -64,6 +63,10 @@ export default function NestedNavigation({
       setWindowWidth(window.innerWidth);
     if (typeof window != "undefined")
       window.addEventListener("resize", () =>
+        setWindowWidth(window.innerWidth)
+      );
+    return () =>
+      window.removeEventListener("resize", () =>
         setWindowWidth(window.innerWidth)
       );
   }, []);
