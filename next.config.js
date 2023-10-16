@@ -8,7 +8,7 @@ const nextConfig = {
   },
   assetPrefix: "/screened2.0/",
   output: "export",
-  basePath: "/screene2.0",
+  basePath: "/screened2.0",
 };
 
 module.exports = nextConfig;
