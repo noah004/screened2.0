@@ -16,7 +16,7 @@ export default function Page() {
           <Image
             src={screenedLogo}
             alt="Screened logo"
-            style={{ maxHeight: "200px", height: "auto" }}
+            style={{ maxHeight: "200px" }}
           />
         </div>
         <div style={{ maxWidth: "2000px", margin: "auto" }} className="row">

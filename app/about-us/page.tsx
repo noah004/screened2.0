@@ -34,7 +34,7 @@ export default function Page() {
           <Image
             src={aboutUsSVG}
             alt="About us"
-            style={{ maxHeight: "100px", height: "auto" }}
+            style={{ maxHeight: "100px" }}
           />
         </div>
       </div>

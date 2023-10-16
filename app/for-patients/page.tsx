@@ -18,7 +18,7 @@ export default function Page() {
           <Image
             src={forPatientsSVG}
             alt="For patients"
-            style={{ maxHeight: "100px", height: "auto" }}
+            style={{ maxHeight: "100px" }}
           />
         </div>
       </div>
