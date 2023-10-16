@@ -4,7 +4,7 @@
 
 const nextConfig = {
   images: {
-    unoptimized: "true",
+    unoptimized: true,
     path: "",
   },
   assetPrefix: "/screened2.0/",
