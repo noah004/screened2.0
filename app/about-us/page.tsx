@@ -29,12 +29,14 @@ export default function Page() {
   return (
     <>
       <NavigationBar color="rgb(241,146,190)" currentPage={"about-us"} />
-      <div className="container text-center">
-        <Image
-          src={aboutUsSVG}
-          alt="About us"
-          style={{ maxHeight: "100px", height: "auto" }}
-        />
+      <div className="container-fluid">
+        <div className="row">
+          <Image
+            src={aboutUsSVG}
+            alt="About us"
+            style={{ maxHeight: "100px", height: "auto" }}
+          />
+        </div>
       </div>
       <div className="container text-center">
         <AboutStaff
