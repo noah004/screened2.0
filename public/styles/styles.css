@@ -120,14 +120,13 @@
   border-width: 2px;
   border-radius: 20px;
   border-color: rgb(74, 74, 74);
-  margin: 30px;
+  margin: 7% 0 7% 0;
 }
 
 .staff-container {
-  min-width: 100px;
-  width: 40%;
+  width: 450px;
   background-color: rgb(248, 238, 226);
-  margin: 3% 3% 0px 3%;
+  margin: 3% 3% 30px 3%;
   padding: 10px 30px 10px 30px;
   border: solid;
   border-color: gray;
