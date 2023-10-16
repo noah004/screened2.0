@@ -7,9 +7,9 @@ const nextConfig = {
     unoptimized: true,
     path: "",
   },
-  assetPrefix: "/screened2.0/",
+  assetPrefix: "",
   output: "export",
-  basePath: "/screened2.0",
+  basePath: "",
 };
 
 module.exports = nextConfig;
