@@ -23,7 +23,7 @@ export default function Page() {
           <div
             className="col-xl-4 col-l-3"
             style={{
-              margin: "60px 0px 0px 3%",
+              margin: "5% 0 5% 3%",
             }}
           >
             <h1>Welcome to Screened!</h1>
