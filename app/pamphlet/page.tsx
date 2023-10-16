@@ -11,7 +11,7 @@ export default function Page() {
           <Image
             src={pamphletSVG}
             alt="Screened logo"
-            style={{ maxHeight: "100px", height: "auto" }}
+            style={{ maxHeight: "100px", height: "auto", maxWidth: "375" }}
           />
         </div>
       </div>
