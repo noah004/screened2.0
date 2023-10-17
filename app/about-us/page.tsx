@@ -22,7 +22,12 @@ const aboutEliane = {
   name: "Eliana Rohr",
   role: "Co Founder",
   Image: elianaJPG,
-  about: "BLUUUURBBBBBBB",
+  about:
+    '"As medical learners and future physicians, we learn early on about ' +
+    "the effects of screening and preventative health on patient outcomes " +
+    "and healthcare optimization. Whether you are a " +
+    "patient, medical trainee or physician, our hope is that this project " +
+    'provided insight and education on the world of screening."',
 };
 
 export default function Page() {
