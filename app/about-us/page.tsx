@@ -15,7 +15,7 @@ const aboutKoty = {
     "screening and preventative health. My goal is to help make " +
     "information easily accessible so that patients and medical " +
     "professionals can work together to make informed decisions about " +
-    'health"',
+    'their health."',
 };
 
 const aboutEliane = {
