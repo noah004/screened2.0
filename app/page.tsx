@@ -84,7 +84,7 @@ export default function Page() {
                 <Image src={aboutUsSVG} alt="For patients" width={200} />
                 <div className="inner-home-box">
                   <h5>Who are we?</h5>
-                  <p>Click here to learn about Screened!</p>
+                  <p>Learn about the people behind screened.</p>
                 </div>
                 <a href="./about-us" className="div-link">
                   <span></span>
