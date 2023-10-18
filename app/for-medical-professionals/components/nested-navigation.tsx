@@ -116,7 +116,7 @@ export default function NestedNavigation({
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span>On this page</span>
+                <span>Click for page navigation</span>
               </button>
               <nav
                 id="pageInfo"
