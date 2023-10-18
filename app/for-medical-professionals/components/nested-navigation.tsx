@@ -31,9 +31,9 @@ export default function NestedNavigation({
 
     ["Type Two Diabetes"],
     ["Hypertension"],
+    ["Dyslipidemia"],
     ["Abdominal Aortic Aneurysm"],
     ["Fragility Fractures"],
-    ["Dyslipidemia"],
   ];
 
   //Create an underlined state for all table of content items
@@ -902,6 +902,152 @@ export default function NestedNavigation({
           </div>
           <div
             ref={(element) => {
+              refs.current.dyslipidemia = element!;
+            }}
+            id={"Dyslipidemia"}
+          >
+            <h1>Dyslipidemia</h1>
+            <span>
+              According to the canadian cardiovascular society guidelines, lipid
+              screening is recommended for men and women above 40 years of age,
+              or at any age with one of the following risk factors:<sup>1</sup>
+              <ul>
+                <li>Clinical evidence of atherosclerosis</li>
+                <li>AAA</li>
+                <li>Diabetes mellitus</li>
+                <li>Arterial hypertension</li>
+                <li>Active cigarette smoker</li>
+                <li>Stigmata of dyslipidemia </li>
+                <li>
+                  Family history of premature cardiovascular disease (first
+                  degree relatives: Men &lt; 55 years old and women &lt; 65
+                  years old)
+                </li>
+                <li>Family history of dyslipidemia</li>
+                <li>CKD </li>
+                <li>Obesity (BMI ≥ 30)</li>
+                <li>Inflammatory diseases</li>
+                <li>HIV infection</li>
+                <li>Erectile dysfunction</li>
+                <li>COPD</li>
+                <li>History of hypertensive disorder of pregnancy</li>
+              </ul>
+            </span>
+            <p>
+              Screening includes a detailed history and physical exam, a
+              standard non fasting lipid profile including: TC, LDL-C, HDL-C,
+              non-HDL-C, TG, FPG or A1c, eGFR, and a one time initial screening
+              of Lipoprotein(a).<sup>1</sup>
+            </p>
+            <p>
+              Once lipid profile is done, the framingham risk assessment can be
+              used to calculate their risk of major cardiovascular events.
+              Patients will be stratified into low, intermediate or high risk
+              which will aid in guiding therapy. Please see{" "}
+              <a href="#initiatingStatins1PNG" className={colorTheme}>
+                image
+              </a>{" "}
+              below for an approach to initiating statins.
+            </p>
+            <p>
+              Repeat screening with either the framingham risk assessment or the
+              Cardiovascular Life Expectancy Model (CLEM) tools should be
+              performed every 5 years for men and women aged 40 to 75.
+            </p>
+            <p>
+              Lifestyle interventions can also have effects on lowering overall
+              lipid levels and reducing cardiovascular events. Encourage
+              patients to engage in regular physical activity in order to
+              accumulate 150 minutes of moderate to vigorous aerobic activity
+              per week. It may also be beneficial to engage in muscle and bone
+              strengthening activities for 2 days per week.<sup>1</sup>
+            </p>
+            <p>
+              As well, maintaining a healthy diet is an important factor to
+              mitigate risk. The mediterranean diet can be adopted as it has
+              evidence for improving cardiovascular outcomes.<sup>1,2</sup>
+            </p>
+            <Image
+              id="initiatingStatins1PNG"
+              src={initiatingStatins1PNG}
+              alt="Initiating Statins Diagram Part 1"
+              style={{ width: "100%", height: "auto" }}
+            />
+            <Image
+              src={initiatingStatins2PNG}
+              alt="Initiating Statins Diagram Part 2"
+              style={{ width: "100%", height: "auto" }}
+            />
+            <i>
+              Image from:{" "}
+              <a
+                className={colorTheme}
+                href="https://ccs.ca/app/uploads/2022/07/2022-Lipids-Gui-PG-EN.pdf5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Canadian Cardiovascular Society&apos;s Dyslipidemia
+                Guidelines
+              </a>
+              .
+            </i>
+            <span style={{ marginTop: "30px" }}>
+              <b>Direct Links:</b>
+              <ul>
+                <li>
+                  <a
+                    className={colorTheme}
+                    href="https://www.mdcalc.com/calc/38/framingham-risk-score-hard-coronary-heart-disease"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Framingham risk score
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className={colorTheme}
+                    href="https://myhealthcheckup.com/cvd/?la"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cardiovascular Life Expectancy Model
+                  </a>
+                </li>
+              </ul>
+            </span>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.1016/j.cjca.2021.03.016"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pearson GJ, Thanassoulis G, Anderson TJ, et al. 2021 Canadian
+                  Cardiovascular Society Guidelines for the Management of
+                  Dyslipidemia for the Prevention of Cardiovascular Disease in
+                  Adults.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.1016/j.pcad.2018.05.004"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chiavaroli L, Nishi SK, Khan TA, et al. Portfolio Dietary
+                  Pattern and Cardiovascular Disease: A Systematic Review and
+                  Meta-analysis of Controlled Trials.
+                </a>
+              </li>
+            </ol>
+          </div>
+
+          <div
+            ref={(element) => {
               refs.current.abdominalAorticAneurysm = element!;
             }}
             id="Abdominal Aortic Aneurysm"
@@ -1130,151 +1276,6 @@ export default function NestedNavigation({
                   rel="noopener noreferrer"
                 >
                   Canada PHA of. Seniors&apos; Falls in Canada: Second Report.
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div
-            ref={(element) => {
-              refs.current.dyslipidemia = element!;
-            }}
-            id={"Dyslipidemia"}
-          >
-            <h1>Dyslipidemia</h1>
-            <span>
-              According to the canadian cardiovascular society guidelines, lipid
-              screening is recommended for men and women above 40 years of age,
-              or at any age with one of the following risk factors:<sup>1</sup>
-              <ul>
-                <li>Clinical evidence of atherosclerosis</li>
-                <li>AAA</li>
-                <li>Diabetes mellitus</li>
-                <li>Arterial hypertension</li>
-                <li>Active cigarette smoker</li>
-                <li>Stigmata of dyslipidemia </li>
-                <li>
-                  Family history of premature cardiovascular disease (first
-                  degree relatives: Men &lt; 55 years old and women &lt; 65
-                  years old)
-                </li>
-                <li>Family history of dyslipidemia</li>
-                <li>CKD </li>
-                <li>Obesity (BMI ≥ 30)</li>
-                <li>Inflammatory diseases</li>
-                <li>HIV infection</li>
-                <li>Erectile dysfunction</li>
-                <li>COPD</li>
-                <li>History of hypertensive disorder of pregnancy</li>
-              </ul>
-            </span>
-            <p>
-              Screening includes a detailed history and physical exam, a
-              standard non fasting lipid profile including: TC, LDL-C, HDL-C,
-              non-HDL-C, TG, FPG or A1c, eGFR, and a one time initial screening
-              of Lipoprotein(a).<sup>1</sup>
-            </p>
-            <p>
-              Once lipid profile is done, the framingham risk assessment can be
-              used to calculate their risk of major cardiovascular events.
-              Patients will be stratified into low, intermediate or high risk
-              which will aid in guiding therapy. Please see{" "}
-              <a href="#initiatingStatins1PNG" className={colorTheme}>
-                image
-              </a>{" "}
-              below for an approach to initiating statins.
-            </p>
-            <p>
-              Repeat screening with either the framingham risk assessment or the
-              Cardiovascular Life Expectancy Model (CLEM) tools should be
-              performed every 5 years for men and women aged 40 to 75.
-            </p>
-            <p>
-              Lifestyle interventions can also have effects on lowering overall
-              lipid levels and reducing cardiovascular events. Encourage
-              patients to engage in regular physical activity in order to
-              accumulate 150 minutes of moderate to vigorous aerobic activity
-              per week. It may also be beneficial to engage in muscle and bone
-              strengthening activities for 2 days per week.<sup>1</sup>
-            </p>
-            <p>
-              As well, maintaining a healthy diet is an important factor to
-              mitigate risk. The mediterranean diet can be adopted as it has
-              evidence for improving cardiovascular outcomes.<sup>1,2</sup>
-            </p>
-            <Image
-              id="initiatingStatins1PNG"
-              src={initiatingStatins1PNG}
-              alt="Initiating Statins Diagram Part 1"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <Image
-              src={initiatingStatins2PNG}
-              alt="Initiating Statins Diagram Part 2"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <i>
-              Image from:{" "}
-              <a
-                className={colorTheme}
-                href="https://ccs.ca/app/uploads/2022/07/2022-Lipids-Gui-PG-EN.pdf5"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Canadian Cardiovascular Society&apos;s Dyslipidemia
-                Guidelines
-              </a>
-              .
-            </i>
-            <span style={{ marginTop: "30px" }}>
-              <b>Direct Links:</b>
-              <ul>
-                <li>
-                  <a
-                    className={colorTheme}
-                    href="https://www.mdcalc.com/calc/38/framingham-risk-score-hard-coronary-heart-disease"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Framingham risk score
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className={colorTheme}
-                    href="https://myhealthcheckup.com/cvd/?la"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Cardiovascular Life Expectancy Model
-                  </a>
-                </li>
-              </ul>
-            </span>
-            <h3>Bibliography</h3>
-            <ol>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.1016/j.cjca.2021.03.016"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pearson GJ, Thanassoulis G, Anderson TJ, et al. 2021 Canadian
-                  Cardiovascular Society Guidelines for the Management of
-                  Dyslipidemia for the Prevention of Cardiovascular Disease in
-                  Adults.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.1016/j.pcad.2018.05.004"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Chiavaroli L, Nishi SK, Khan TA, et al. Portfolio Dietary
-                  Pattern and Cardiovascular Disease: A Systematic Review and
-                  Meta-analysis of Controlled Trials.
                 </a>
               </li>
             </ol>

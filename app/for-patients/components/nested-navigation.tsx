@@ -24,9 +24,9 @@ export default function NestedNavigation({
 
     ["Type Two Diabetes"],
     ["Hypertension"],
+    ["Dyslipidemia"],
     ["Abdominal Aortic Aneurysm"],
     ["Fragility Fractures"],
-    ["Dyslipidemia"],
   ];
 
   //Create an underlined state for all table of content items
@@ -823,6 +823,156 @@ export default function NestedNavigation({
           </div>
           <div
             ref={(element) => {
+              refs.current.dyslipidemia = element!;
+            }}
+            id="Dyslipidemia"
+          >
+            <h1>Dyslipidemia</h1>
+            <p>
+              Lipids are fats which are stored in the body and are used as a
+              source of energy. They include the following: HDL (otherwise known
+              as the &quot;good&quot; cholesterol), LDL (otherwise known as the
+              &quot;bad&quot; cholesterol), and triglycerides.<sup>1</sup>{" "}
+              Dyslipidemia is a condition in which there are abnormal levels of
+              lipids in the body. This increases the risk of heart attack,
+              stroke and other conditions.<sup>2</sup>
+            </p>
+            <p>
+              Dyslipidemia is quite a prevalent condition in Canada, with data
+              collected from 2007-2009 indicating that 45% of Canadian adults
+              have dyslipidemia, 57% of which are unaware of it.<sup>3</sup>{" "}
+              Though it has a strong link with increasing your risk of adverse
+              cardiac events such as heart attack, it is a risk factor that may
+              be modified with certain lifestyle changes.<sup>4</sup> The 2021
+              Canadian Cardiovascular Society Guidelines recommends screening
+              for cholesterol for men and women above the age of forty, or at
+              any age if you have a criteria which puts you at higher risk for
+              elevated cholesterol. Examples include family history of cardiac
+              events at an early age or history of dyslipidemia, obesity,
+              diabetes, amongst others.<sup>5</sup> It is important to discuss
+              with your healthcare professional if you meet criteria for
+              testing.
+            </p>
+            <p>
+              You will take a blood test which will look at your lipid levels.
+              If your doctor tells you to fast before your test, do not eat or
+              drink anything except water for 9 to 12 hours before having your
+              blood drawn, and avoid alcohol consumption or vigorous exercise.
+              <sup>6</sup>
+            </p>
+            <p>
+              In addition to screening, there are other steps that you can do to
+              decrease the rate of cholesterol in the body. It is recommended to
+              get at least 150 minutes of moderate to vigorous aerobic activity
+              per week, and to add muscle and bone strength activities at least
+              2 days per week.<sup>7</sup> Maintaining a healthy diet is an
+              important factor that can reduce your risk.<sup>5</sup> Quitting
+              smoking at any age can lower the risk of cardiac events. Please
+              visit{" "}
+              <a
+                className={colorTheme}
+                href="https://www.tobaccofreequebec.ca/iquitnow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tobaco-Free Quebec
+              </a>{" "}
+              if you would like support to quit smoking.<sup>8</sup>
+            </p>
+            <h3>Bibliography</h3>
+            <ol>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://www.cdc.gov/cholesterol/ldl_hdl.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CDC. LDL and HDL Cholesterol and Triglycerides | cdc.gov.
+                  Centers for Disease Control and Prevention.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.7326/aitc201712050"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kopin L, Lowenstein CJ. Dyslipidemia.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.17269/cjph.104.3783"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Joffres M, Shields M, Tremblay MS, Gorber SC. Dyslipidemia
+                  Prevalence, Treatment, Control, and Awareness in the Canadian
+                  Health Measures Survey.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.1007/s11745-010-3408-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Musunuru K. Atherogenic Dyslipidemia: Cardiovascular Risk and
+                  Dietary Intervention.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.1016/j.cjca.2021.03.016"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pearson GJ, Thanassoulis G, Anderson TJ, et al. 2021 Canadian
+                  Cardiovascular Society Guidelines for the Management of
+                  Dyslipidemia for the Prevention of Cardiovascular Disease in
+                  Adults.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://myhealth.alberta.ca:443/Health/Pages/conditions.aspx?hwid=tr6155"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lipid Panel.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://doi.org/10.1001/archinte.167.10.999"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kodama S. Effect of Aerobic Exercise Training on Serum Levels
+                  of High-Density Lipoprotein Cholesterol: A Meta-analysis.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://www.tobaccofreequebec.ca/iquitnow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  I Quit Now - Tobacco-Free Quebec.
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div
+            ref={(element) => {
               refs.current.abdominalAorticAneurysm = element!;
             }}
             id="Abdominal Aortic Aneurysm"
@@ -1097,156 +1247,6 @@ export default function NestedNavigation({
                   Al-Bashaireh AM, Haddad LG, Weaver M, Chengguo X, Kelly DL,
                   Yoon S. The Effect of Tobacco Smoking on Bone Mass: An
                   Overview of Pathophysiologic Mechanisms.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://www.tobaccofreequebec.ca/iquitnow"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  I Quit Now - Tobacco-Free Quebec.
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div
-            ref={(element) => {
-              refs.current.dyslipidemia = element!;
-            }}
-            id="Dyslipidemia"
-          >
-            <h1>Dyslipidemia</h1>
-            <p>
-              Lipids are fats which are stored in the body and are used as a
-              source of energy. They include the following: HDL (otherwise known
-              as the &quot;good&quot; cholesterol), LDL (otherwise known as the
-              &quot;bad&quot; cholesterol), and triglycerides.<sup>1</sup>{" "}
-              Dyslipidemia is a condition in which there are abnormal levels of
-              lipids in the body. This increases the risk of heart attack,
-              stroke and other conditions.<sup>2</sup>
-            </p>
-            <p>
-              Dyslipidemia is quite a prevalent condition in Canada, with data
-              collected from 2007-2009 indicating that 45% of Canadian adults
-              have dyslipidemia, 57% of which are unaware of it.<sup>3</sup>{" "}
-              Though it has a strong link with increasing your risk of adverse
-              cardiac events such as heart attack, it is a risk factor that may
-              be modified with certain lifestyle changes.<sup>4</sup> The 2021
-              Canadian Cardiovascular Society Guidelines recommends screening
-              for cholesterol for men and women above the age of forty, or at
-              any age if you have a criteria which puts you at higher risk for
-              elevated cholesterol. Examples include family history of cardiac
-              events at an early age or history of dyslipidemia, obesity,
-              diabetes, amongst others.<sup>5</sup> It is important to discuss
-              with your healthcare professional if you meet criteria for
-              testing.
-            </p>
-            <p>
-              You will take a blood test which will look at your lipid levels.
-              If your doctor tells you to fast before your test, do not eat or
-              drink anything except water for 9 to 12 hours before having your
-              blood drawn, and avoid alcohol consumption or vigorous exercise.
-              <sup>6</sup>
-            </p>
-            <p>
-              In addition to screening, there are other steps that you can do to
-              decrease the rate of cholesterol in the body. It is recommended to
-              get at least 150 minutes of moderate to vigorous aerobic activity
-              per week, and to add muscle and bone strength activities at least
-              2 days per week.<sup>7</sup> Maintaining a healthy diet is an
-              important factor that can reduce your risk.<sup>5</sup> Quitting
-              smoking at any age can lower the risk of cardiac events. Please
-              visit{" "}
-              <a
-                className={colorTheme}
-                href="https://www.tobaccofreequebec.ca/iquitnow"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Tobaco-Free Quebec
-              </a>{" "}
-              if you would like support to quit smoking.<sup>8</sup>
-            </p>
-            <h3>Bibliography</h3>
-            <ol>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://www.cdc.gov/cholesterol/ldl_hdl.htm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  CDC. LDL and HDL Cholesterol and Triglycerides | cdc.gov.
-                  Centers for Disease Control and Prevention.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.7326/aitc201712050"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Kopin L, Lowenstein CJ. Dyslipidemia.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.17269/cjph.104.3783"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Joffres M, Shields M, Tremblay MS, Gorber SC. Dyslipidemia
-                  Prevalence, Treatment, Control, and Awareness in the Canadian
-                  Health Measures Survey.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.1007/s11745-010-3408-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Musunuru K. Atherogenic Dyslipidemia: Cardiovascular Risk and
-                  Dietary Intervention.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.1016/j.cjca.2021.03.016"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pearson GJ, Thanassoulis G, Anderson TJ, et al. 2021 Canadian
-                  Cardiovascular Society Guidelines for the Management of
-                  Dyslipidemia for the Prevention of Cardiovascular Disease in
-                  Adults.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://myhealth.alberta.ca:443/Health/Pages/conditions.aspx?hwid=tr6155"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Lipid Panel.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.1001/archinte.167.10.999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Kodama S. Effect of Aerobic Exercise Training on Serum Levels
-                  of High-Density Lipoprotein Cholesterol: A Meta-analysis.
                 </a>
               </li>
               <li>
