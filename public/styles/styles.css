@@ -55,6 +55,7 @@
 
 .go-to-top-button:active {
   background-color: rgb(233, 234, 236) !important;
+  border-color: rgb(223, 224, 227) !important;
 }
 
 .inv {
