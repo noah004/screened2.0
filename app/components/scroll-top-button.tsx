@@ -50,7 +50,7 @@ export default function ScrollTopButton({
         <Image
           src={arrows[colorTheme]}
           alt="Go to top of the page"
-          height={50}
+          height={window.innerHeight > 250 ? 50 : 25}
         />
       </button>
     </div>
