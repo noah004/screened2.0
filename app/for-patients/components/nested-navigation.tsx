@@ -270,10 +270,6 @@ export default function NestedNavigation({
               reduce the risk of HPV infection.
             </p>
             <p>
-              Using barrier protection (such as condoms) during intercourse is
-              an important way to help reduce the risk of HPV infection.
-            </p>
-            <p>
               People who smoke are twice as likely to develop cervical cancer
               than those who don&apos;t smoke. Speak to your health care
               professional about smoking cessation or visit{" "}
