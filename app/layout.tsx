@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Screened",
   description:
-    "A Canadian screening and preventative health website for patients and medical proffesionals.",
+    "A Canadian screening and preventative health website for patients and medical professionals.",
 };
 
 export default function RootLayout({
