@@ -174,14 +174,14 @@ export default function NestedNavigation({
               Screening may begin earlier for individuals who are at higher risk
               of breast cancer. This may include:<sup>2</sup>
               <ul>
-                <li>Women with personal or family history of breast cancer</li>
+                <li>Women with personal or family history of breast cancer.</li>
                 <li>
                   Women who are carriers of gene mutations (BRCA 1 or BRCA 2) or
-                  first degree relative with these conditions
+                  first degree relative with these conditions.
                 </li>
                 <li>
                   Women who had chest radiation before the age of 30 or within
-                  the last 8 years
+                  the last 8 years.
                 </li>
               </ul>
             </span>
@@ -220,8 +220,9 @@ export default function NestedNavigation({
             <h1>Cervical Cancer</h1>
             <p>
               Pap tests are recommended to begin at age 21 if sexually active.
-              If normal, it can be repeated every 2-3 years. Screening can stop
-              at age 65 if the last 2 tests in the past 10 years were negative
+              If the result is normal, it can be repeated every 2-3 years.
+              Screening can stop at age 65 if the last 3 tests in the past 10
+              years were negative
               <sup>1</sup>
             </p>
             <p>
@@ -241,7 +242,7 @@ export default function NestedNavigation({
               will provide updates on this website as they become available.
             </p>
             <p>
-              In order to prevent the risk of cervical cancer, the vaccination
+              In order to prevent the risk of cervical cancer, vaccination
               against HPV is recommended ideally prior to sexual debut.
             </p>
             <p>
@@ -528,16 +529,16 @@ export default function NestedNavigation({
               repeated every 3 years.<sup>3</sup>
             </p>
             <p>
-              Development of diabetes can likewise be mitigated by various
-              lifestyle modifications. Engaging in a healthy diet, such as the
-              DASH diet has been associated with a lower risk of developing type
-              2 diabetes.<sup>4</sup> Physical activity has likewise been shown
-              to lower the risk of developing diabetes. Engaging in 150 min/week
-              of moderate-intensity physical activity, such as brisk walking,
-              shows beneficial effects in those with prediabetes.<sup>5</sup>{" "}
-              Lastly, evaluation for smoking habits should be done for all
-              patients at risk of diabetes.<sup>6</sup> It is strongly
-              encouraged for all patients to make efforts to quit smoking.
+              Development of diabetes may be mitigated by various lifestyle
+              modifications. Engaging in a healthy diet, such as the DASH diet
+              has been associated with a lower risk of developing type 2
+              diabetes.<sup>4</sup> Physical activity has also been shown to
+              lower the risk of developing diabetes. Engaging in 150 min/week of
+              moderate-intensity physical activity, such as brisk walking, shows
+              beneficial effects in those with prediabetes.<sup>5</sup> Lastly,
+              evaluation for smoking habits should be done for all patients at
+              risk of diabetes.<sup>6</sup> It is strongly encouraged for all
+              patients to make efforts to quit smoking.
               <sup>7</sup> Please refer your patients to{" "}
               <a
                 className={colorTheme}
@@ -674,11 +675,6 @@ export default function NestedNavigation({
               primary care visits for adults aged 18 and older.<sup>1</sup>
             </p>
             <p>
-              The various risks associated with high blood pressure increase
-              with age and comorbidities amongst other factors, and should be
-              taken into consideration in various health visits.
-            </p>
-            <p>
               If your patient meets criteria for elevated blood pressure, follow
               the CHEP criteria to assess whether they meet criteria for
               diagnosis. The image below is adapted from the hypertension canada
@@ -694,10 +690,10 @@ export default function NestedNavigation({
               10-year risk of heart attack using the Framingham risk assessment,
               intended for patients aged 30-79 years old without history of CAD,
               claudication, or diabetes. The factors included in the calculation
-              include age, total cholesterol, HDL, SBP, hypertensive treatment
-              and smoking status, and can be shown as a visual aid to patients
-              to help assess their risk and if they are candidates for
-              additional treatment.<sup>3,4</sup>
+              are age, total cholesterol, HDL, SBP, hypertensive treatment and
+              smoking status. This may be used as a visual aid with patients to
+              help assess their risk and if they are candidates for additional
+              treatment.<sup>3,4</sup>
             </p>
             <p>
               Demonstrative calculator to be used with patients:{" "}
@@ -758,7 +754,7 @@ export default function NestedNavigation({
             </p>
             <h4>Proper assessment of manual BP reading:</h4>
             <span>
-              *Of note, Measurement using validated electronic (oscillometric)
+              *Of note, measurement using validated electronic (oscillometric)
               upper arm devices is preferred over auscultation.<sup>7</sup>
               <br />
               Before beginning, make sure that your patient has:
@@ -794,10 +790,10 @@ export default function NestedNavigation({
                 <ol type="a">
                   <li>Position stethoscope over brachial artery.</li>
                   <li>
-                    Reinflate cuff to approximately 20 above the systolic blood
-                    pressure you heard.
+                    Reinflate cuff to approximately 20 mm Hg above the systolic
+                    blood pressure you heard.
                   </li>
-                  <li>Slowly deflate cuff 2 mm hg per second.</li>
+                  <li>Slowly deflate cuff 2 mm Hg per second.</li>
                   <li>
                     With a stethoscope, listen to the FIRST pulsatile noise.
                     This is known as Kortokoff sound, and reflects systolic BP.
@@ -908,7 +904,7 @@ export default function NestedNavigation({
           >
             <h1>Dyslipidemia</h1>
             <span>
-              According to the canadian cardiovascular society guidelines, lipid
+              According to The Canadian Cardiovascular Society guidelines, lipid
               screening is recommended for men and women above 40 years of age,
               or at any age with one of the following risk factors:<sup>1</sup>
               <ul>
@@ -940,8 +936,8 @@ export default function NestedNavigation({
               of Lipoprotein(a).<sup>1</sup>
             </p>
             <p>
-              Once lipid profile is done, the framingham risk assessment can be
-              used to calculate their risk of major cardiovascular events.
+              Once lipid profile is completed, the framingham risk assessment
+              can be used to calculate the risk of major cardiovascular events.
               Patients will be stratified into low, intermediate or high risk
               which will aid in guiding therapy. Please see{" "}
               <a href="#initiatingStatins1PNG" className={colorTheme}>
@@ -951,7 +947,7 @@ export default function NestedNavigation({
             </p>
             <p>
               Repeat screening with either the framingham risk assessment or the
-              Cardiovascular Life Expectancy Model (CLEM) tools should be
+              Cardiovascular Life Expectancy Model (CLEM). These tools should be
               performed every 5 years for men and women aged 40 to 75.
             </p>
             <p>
@@ -964,8 +960,8 @@ export default function NestedNavigation({
             </p>
             <p>
               As well, maintaining a healthy diet is an important factor to
-              mitigate risk. The mediterranean diet can be adopted as it has
-              evidence for improving cardiovascular outcomes.<sup>1,2</sup>
+              mitigate risk. The mediterranean diet can be discussed as it may
+              improve cardiovascular outcomes.<sup>1,2</sup>
             </p>
             <Image
               id="initiatingStatins1PNG"
@@ -1054,9 +1050,9 @@ export default function NestedNavigation({
           >
             <h1>Abdominal Aortic Aneurysm</h1>
             <p>
-              As per screening recommendations by the Canadian Task Force, men
-              aged 65 to 80 years should undergo a one-time AAA screening using
-              abdominal ultrasound.<sup>1</sup>
+              According to The Canadian Task Force, men aged 65 to 80 years old
+              should undergo a one-time AAA screening with an abdominal
+              ultrasound.<sup>1</sup>
             </p>
             <p>
               In addition to screening, there are various things that patients
@@ -1126,7 +1122,14 @@ export default function NestedNavigation({
               <sup>1</sup>
             </p>
             <p>
-              One can start by using a fracture risk estimation tool, such as{" "}
+              Before screening for fragility fractures, it is recommended to
+              assess whether the patient would accept initation of medications.
+              This conversation should include the side effect profile of
+              bisphosphonates.
+            </p>
+            <p>
+              If a patient agrees to initiate pharmacotherapy, screening can be
+              initiated with a fracture risk estimation tool, such as{" "}
               <a
                 className={colorTheme}
                 href="https://frax.canadiantaskforce.ca/"
@@ -1135,15 +1138,17 @@ export default function NestedNavigation({
               >
                 the FRAX
               </a>
-              , to initiate shared decision making.
+              .
             </p>
             <p>
               At this point, a bone mineral density (BMD) test is not required.
             </p>
-            <h4>
-              For a conversation on risk management, consider the following
-              approach:<sup>2</sup>
-            </h4>
+            <p>
+              <b>
+                For a conversation on risk management, consider the following
+                approach:<sup>2</sup>
+              </b>
+            </p>
             <ol>
               <li>
                 Contemplating the likelihood of fracture, whether with or
@@ -1179,7 +1184,7 @@ export default function NestedNavigation({
             <p>
               If a patient agrees to undergo further investigations and a BMD is
               performed, you should re-estimate the risk by adding the BMD risk
-              score to the calculation:{" "}
+              score to the{" "}
               <a
                 className={colorTheme}
                 href="https://frax.shef.ac.uk/FRAX/index.aspx"
@@ -1188,6 +1193,7 @@ export default function NestedNavigation({
               >
                 FRAX
               </a>
+              .
             </p>
             <p>
               Currently, there are no definitive guidelines indicating the
@@ -1205,13 +1211,9 @@ export default function NestedNavigation({
             </p>
             <p>
               It is also crucial to consider measures for fall prevention as
-              falls are a primary contributor to disability. Falls result from
-              an interplay of various risk factors causing an inability to
-              maintain or regain balance, and encompass biological, behavioral,
-              social, economic, and environmental aspects.<sup>5</sup> To
-              address these concerns, consider viewing the following link which
-              provides a module for an overview of fall prevention and
-              assessment:{" "}
+              falls are a primary contributor to disability. To address this,
+              consider viewing the following link which provides a module for an
+              overview of fall prevention and assessment:{" "}
               <a
                 className={colorTheme}
                 href="https://www.rgpeo.com/stop-falls/health-professionals/#education-modules."
@@ -1266,16 +1268,6 @@ export default function NestedNavigation({
                   McMillan L, Zengin A, Ebeling P, Scott D. Prescribing Physical
                   Activity for the Prevention and Treatment of Osteoporosis in
                   Older Adults.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://www.canada.ca/en/public-health/services/health-promotion/aging-seniors/publications/publications-general-public/seniors-falls-canada-second-report.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Canada PHA of. Seniors&apos; Falls in Canada: Second Report.
                 </a>
               </li>
             </ol>

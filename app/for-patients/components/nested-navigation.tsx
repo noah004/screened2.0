@@ -164,8 +164,8 @@ export default function NestedNavigation({
           >
             <h1>Breast Cancer</h1>
             <p>
-              Breast cancer is the most common cancer in women. 1 in 8 women in
-              Canada are estimated to be diagnosed in their lifetime.
+              Breast cancer is the most common cancer in women. In Canada, 1 in
+              8 women are estimated to be diagnosed in their lifetime.
               <sup>1</sup> Certain factors can predispose women to breast
               cancer. This includes advancing age, certain genetic mutations,
               having family members with breast cancer, previous radiation
@@ -191,10 +191,11 @@ export default function NestedNavigation({
             <p>
               Undergoing screening is an individualized choice based on
               what&apos;s important to you. Speak to your health care provider
-              if you would like to know more about the potential harms about
-              screening for breast cancer, such as unwanted further tests or
-              treatments. To prepare yourself for your test, do not wear any
-              products on your body including deodorant, perfume or powders.
+              if you would like to know more about the potential harms
+              associated with breast cancer screening, such as unwanted further
+              tests or treatments. To prepare yourself for your test, do not
+              wear any products on your body including deodorant, perfume or
+              powders.
             </p>
             <h3>Bibliography</h3>
             <ol>
@@ -239,18 +240,18 @@ export default function NestedNavigation({
               and cigarette smoking<sup>2</sup>.
             </p>
             <p>
-              Pap tests are done to visualize the cervix and obtain a sample to
+              Pap tests are done to obtain a sample of the cervix which can then
               undergo analysis. This is done by a healthcare provider using a
               speculum. Results from this test can be normal or can show varying
               degrees of abnormality. Based on the result and your age, you may
-              be asked to repeat the pap test, do an HPV test or undergo
+              be asked to repeat the pap test, undergo an HPV test or
               colposcopy. Detection can lead to early treatment, which has the
               ability to prevent cervical cancer from developing.
             </p>
             <p>
-              It is recommended to undergo a pap test between ages 21-69 every
+              It is recommended to undergo a pap test between ages 21-65 every
               2-3 years. This can be delayed if not yet sexually active at age
-              21. Screening can be stopped at age 65 if the last 2 consecutive
+              21. Screening can be stopped at age 65 if the last 3 consecutive
               pap tests in the past 10 years have been negative.
             </p>
             <p>
@@ -263,11 +264,11 @@ export default function NestedNavigation({
               <sup>3</sup>
             </p>
             <p>
-              In Canada, it is recommended to get the HPV Vaccine (Gardasil) in
-              order to help prevent infection by certain strains of HPV which
-              may reduce your risk of cervical cancer. Using barrier protection
-              (such as condoms) during intercourse is an important way to help
-              reduce the risk of HPV infection.
+              In Canada, it is recommended to get the HPV Vaccine in order to
+              help prevent infection by certain strains of HPV which may reduce
+              your risk of cervical cancer. Using barrier protection (such as
+              condoms) during intercourse is an important way to help reduce the
+              risk of HPV infection.
             </p>
             <p>
               People who smoke are twice as likely to develop cervical cancer
@@ -338,17 +339,17 @@ export default function NestedNavigation({
           >
             <h1>Colorectal Cancer</h1>
             <p>
-              In 2022, 24,300 Canadians were diagnosed with colorectal cancer in
-              Canada.<sup>1</sup> Screening can identify precancerous lesions
-              and when removed can reduce progression to cancer. Most people
-              with colorectal cancer have no family history.
+              In 2022, 24,300 Canadians were diagnosed with colorectal cancer.
+              <sup>1</sup> Screening can identify precancerous lesions and when
+              removed can reduce the progression to cancer. Most people with
+              colorectal cancer have no family history.
             </p>
             <p>
-              The FIT test is a stool test that checks for the presence of blood
-              in stool. Alternatively, you may be asked to undergo a flexible
-              sigmoidoscopy. Similar to a colonoscopy, this is a procedure where
-              a camera is inserted through the rectum to view the colon and
-              rectum.
+              Screening involves undergoing a stool test (or FIT test) to check
+              for presence of blood. Alternatively, you may be asked to undergo
+              a flexible sigmoidoscopy. Similar to a colonoscopy, this is a
+              procedure where a camera is inserted through the rectum to view
+              the colon and rectum.
             </p>
             <p>
               People aged 50-74 can either undergo a FIT test every 2 years or a
@@ -396,19 +397,19 @@ export default function NestedNavigation({
           >
             <h1>Lung Cancer</h1>
             <p>
-              In 2022, 30 000 Canadians were diagnosed with lung and bronchus
+              In 2022, 30,000 Canadians were diagnosed with lung and bronchus
               cancer.<sup>1</sup> Most people with lung cancer will not have
-              symptoms for the first several years. It is usually diagnosed at a
-              more advanced stage.
+              symptoms for the first several years. Unfortunately, it is usually
+              diagnosed at a more advanced stage.
             </p>
             <p>
               Currently, there are no official screening recommendations for
               lung cancer in Quebec. However, in 2021, Quebec initiated a lung
-              cancer screening demonstration project.<sup>2</sup> It offers a
-              low dose CT for people at high risk for developing lung cancer.
-              This includes: people between the ages of 55-74 who have either
-              smoked on or off for at least 20 years or smoked on or off for at
-              least 20 years and quit less than 15 years ago.
+              cancer screening demonstration project.<sup>2</sup> This program
+              offers a low dose CT scan for people at high risk of developing
+              lung cancer. This includes: people between the ages of 55-74 who
+              have either smoked on or off for at least 20 years or smoked on or
+              off for at least 20 years and quit less than 15 years ago.
             </p>
             <p>
               If you do not have a healthcare provider, you can email{" "}
@@ -476,7 +477,7 @@ export default function NestedNavigation({
               It is estimated that over 3 million Canadians have been diagnosed
               with diabetes, making it one of the most common chronic health
               conditions.<sup>1</sup> Type two diabetes may be driven by
-              multiple factors, such as unhealthy eating, lack of physical
+              multiple factors, such as genetics, diet, level of physical
               activity, smoking, and various determinants of health related to
               socioeconomic status and living environment.<sup>2,3</sup>{" "}
               Furthermore, 6.1% of Canadians aged 20-79 have prediabetes, which
@@ -487,15 +488,15 @@ export default function NestedNavigation({
               Uncontrolled sugar levels can affect both the big and small blood
               vessels in the body. If left untreated, this can lead to
               devastating effects such as heart disease, kidney failure, stroke,
-              blindness amongst others.<sup>4</sup>
+              blindness, amongst others.<sup>4</sup>
             </p>
             <p>
               Screening for type 2 diabetes involves taking a blood test which
-              measures the glucose in the blood, or the hemoglobin A1C, another
-              glucose test that acts a proxy for the average glucose level in
-              the last three months. From ages 18 and up, using the CANRISK
-              questionnaire, you will be able to continue assessing your risk of
-              developing diabetes.<sup>5</sup>
+              measures the amount of glucose in the blood, or the hemoglobin
+              A1C, another glucose test that acts a proxy for the average
+              glucose level in the last three months. Individuals aged 18 and
+              older can use the CANRISK questionnaire to continue assessing the
+              risk of developing diabetes.<sup>5</sup>
             </p>
             <p>
               Before coming to the test, ask your healthcare professional if you
@@ -517,7 +518,7 @@ export default function NestedNavigation({
               >
                 Canadian Food Guide
               </a>{" "}
-              for more information about recommendations.<sup>6</sup> It is
+              for more information about diet recommendations.<sup>6</sup> It is
               recommended to include 150 minutes of moderate physical activity
               per week, such as brisk walking.<sup>8</sup> Smoking cessation is
               also an important factor in preventing the development of type 2
@@ -650,48 +651,43 @@ export default function NestedNavigation({
               Approximately 19% of all Canadian adults have high blood pressure.
               <sup>1</sup> High blood pressure increases the amount of work that
               the heart needs to exert in order to pump blood to the entire
-              body. This can cause the heart to become damaged. It can also
-              cause damage to the arteries, leading to complications such as
-              tears, hardening or bulging. It can also increase the risk of
-              stroke, dementia, blindness and heart attack.<sup>2</sup>
+              body. This can cause damage to the heart and vessel. It can also
+              increase the risk of stroke, dementia, blindness and heart attack.
+              <sup>2</sup>
             </p>
             <p>
               High blood pressure can be due to a variety of factors. Some of
               the risk factors are not within our control such as sex,
               ethnicity, gender and a family history of hypertension, whereas
               others factors that we will describe below can be addressed
-              through lifestyle changes to reduce your risk. In order to
-              mitigate these effects, it is important to check and understand
-              your blood pressure.<sup>3</sup>
+              through lifestyle changes. In order to mitigate these effects, it
+              is important to check and understand your blood pressure.
+              <sup>3</sup>
             </p>
             <p>
-              Blood pressure is written as two separate numbers: The first is
-              systolic pressure which represents the pressure in the blood
-              pressure when the heart beats. The diastolic pressure, which is
-              the second number, is the pressure of the heart at rest.
+              Blood pressure is written as two separate numbers. The higher
+              number is the systolic pressure which represents the pressure in
+              the blood pressure when the heart beats. The diastolic pressure,
+              which is the lower number, is the pressure of the heart at rest.
               <sup>4</sup>
             </p>
             <p>
-              The Canadian task force recommends that blood pressure should be
+              The Canadian Task Force recommends that blood pressure should be
               checked at all appropriate primary health care visits for
-              individuals above 18 years of age.<sup>5</sup> Following the
-              reading, your healthcare provider will be able to assess whether
-              you are at risk for hypertension and this may be followed with at
-              home blood pressure monitoring.<sup>6</sup>
+              individuals above 18 years of age.<sup>5,6</sup>
             </p>
             <p>
               Before taking your blood pressure, your healthcare provider will
               position you in the appropriate placement to allow for the most
-              accurate read. During this time, it is important to not talk or
-              move prior to the measurement, keep legs uncrossed and feet flat
-              on the floor. Based on your blood pressure measurements, you may
-              be asked to continue monitoring blood pressure at home. You may be
-              asked to wear a device that will monitor your blood pressure over
-              24 hours. Otherwise, you may be asked to monitor your own blood
-              pressure with a device or at your local pharmacy, and then monitor
-              the values with a diary. For more information about how to take at
-              home blood pressure measurements, and for an associated guide,
-              please click{" "}
+              accurate read. During this time, it is important to keep your legs
+              uncrossed and avoid talking or moving. Based on your blood
+              pressure measurement, you may be asked to continue monitoring
+              blood pressure at home. You may be asked to wear a device that
+              will monitor your blood pressure over 24 hours. Otherwise, you may
+              be asked to monitor your own blood pressure with a purchased
+              device or at your local pharmacy. For more information about how
+              to take at home blood pressure measurements, and for an associated
+              guide, please click{" "}
               <a
                 className={colorTheme}
                 href="https://guidelines.hypertension.ca/wp-content/uploads/2023/03/HTC_BloodPressureLog_ENG_FILLABLE.pdf"
@@ -836,33 +832,30 @@ export default function NestedNavigation({
             <p>
               Dyslipidemia is quite a prevalent condition in Canada, with data
               collected from 2007-2009 indicating that 45% of Canadian adults
-              have dyslipidemia, 57% of which are unaware of it.<sup>3</sup>{" "}
-              Though it has a strong link with increasing your risk of adverse
-              cardiac events such as heart attack, it is a risk factor that may
-              be modified with certain lifestyle changes.<sup>4</sup> The 2021
-              Canadian Cardiovascular Society Guidelines recommends screening
-              for cholesterol for men and women above the age of forty, or at
-              any age if you have a criteria which puts you at higher risk for
-              elevated cholesterol. Examples include family history of cardiac
-              events at an early age or history of dyslipidemia, obesity,
-              diabetes, amongst others.<sup>5</sup> It is important to discuss
-              with your healthcare professional if you meet criteria for
-              testing.
+              had dyslipidemia, 57% of which were unaware of it.<sup>3</sup> The
+              2021 Canadian Cardiovascular Society Guidelines recommends
+              screening for cholesterol for men and women above the age of
+              forty, or at any age if you have a criteria which puts you at
+              higher risk for elevated cholesterol. Examples include family
+              history of cardiac events at an early age or history of
+              dyslipidemia, obesity, diabetes, amongst others.<sup>4</sup> It is
+              important to discuss with your healthcare professional if you meet
+              criteria for testing.
             </p>
             <p>
               You will take a blood test which will look at your lipid levels.
               If your doctor tells you to fast before your test, do not eat or
               drink anything except water for 9 to 12 hours before having your
               blood drawn, and avoid alcohol consumption or vigorous exercise.
-              <sup>6</sup>
+              <sup>5</sup>
             </p>
             <p>
               In addition to screening, there are other steps that you can do to
               decrease the rate of cholesterol in the body. It is recommended to
               get at least 150 minutes of moderate to vigorous aerobic activity
               per week, and to add muscle and bone strength activities at least
-              2 days per week.<sup>7</sup> Maintaining a healthy diet is an
-              important factor that can reduce your risk.<sup>5</sup> Quitting
+              2 days per week.<sup>6</sup> Maintaining a healthy diet is an
+              important factor that can reduce your risk.<sup>4</sup> Quitting
               smoking at any age can lower the risk of cardiac events. Please
               visit{" "}
               <a
@@ -873,7 +866,7 @@ export default function NestedNavigation({
               >
                 Tobaco-Free Quebec
               </a>{" "}
-              if you would like support to quit smoking.<sup>8</sup>
+              if you would like support to quit smoking.<sup>7</sup>
             </p>
             <h3>Bibliography</h3>
             <ol>
@@ -908,17 +901,6 @@ export default function NestedNavigation({
                   Joffres M, Shields M, Tremblay MS, Gorber SC. Dyslipidemia
                   Prevalence, Treatment, Control, and Awareness in the Canadian
                   Health Measures Survey.
-                </a>
-              </li>
-              <li>
-                <a
-                  className={colorTheme}
-                  href="https://doi.org/10.1007/s11745-010-3408-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Musunuru K. Atherogenic Dyslipidemia: Cardiovascular Risk and
-                  Dietary Intervention.
                 </a>
               </li>
               <li>
@@ -981,17 +963,15 @@ export default function NestedNavigation({
               caught early on, it has the potential to get larger and may lead
               to rupture, which comes with a risk of life-threatening bleeding.
               <sup>1</sup> The Canadian task force recommends that men 65 to 80
-              years of age have a one-time screening for AAA with an ultrasound
-              to reduce the risk of AAA negative events<sup>2</sup>.
+              years of age have a one-time screening for AAA with an ultrasound.
+              <sup>2</sup>
             </p>
             <p>
               In addition to screening, taking steps to protect yourself from
-              developing an abdominal aortic aneurysm is crucial. There are
-              various things that you can do to help decrease your risk of
-              developing an AAA or reduce its growth. There are certain steps
-              you can take to help reduce your risk such as cutting down and
-              ultimately quitting tobacco smoking, which has been shown to play
-              a big role in the development of AAA.<sup>3</sup> Please visit{" "}
+              developing an AAA is crucial. Smoking is the leading risk factor
+              associated with the development of an AAA, as such, it is
+              recommended to quit smoking.
+              <sup>3</sup> Please visit{" "}
               <a
                 className={colorTheme}
                 href="https://www.tobaccofreequebec.ca/iquitnow"
@@ -1065,44 +1045,42 @@ export default function NestedNavigation({
             <p>
               Older age, being of the female sex, white race, prolonged
               immobility, and long use of corticosteroids are known to increase
-              risk of osteoporosis.<sup>3</sup> For individuals aged 50 years or
-              older, over 80% of all fractures are due to osteoporosis.
-              <sup>1</sup>
+              risk of fragility fractures.<sup>3</sup>
             </p>
             <p>
               Different methods are available to evaluate your risk of fragility
-              fractures. Two complementary screening approaches include the FRAX
-              score and a Bone Mineral Density (BMD) test. The most common test
-              that measures BMD is the dual energy x-ray absorptiometry (DXA),
-              and involves lying flat on a table for several minutes while an
-              x-ray scans your spine or hip(s).<sup>4</sup> It&apos;s important
-              to note that screening for fragility fractures carries the
-              potential for overdiagnosis and adverse effects from treatment.
+              fractures. This mainly includes the FRAX score and a Bone Mineral
+              Density (BMD) test. The most common test that measures BMD is the
+              dual energy x-ray absorptiometry (DXA), and involves lying flat on
+              a table for several minutes while an x-ray scans your spine or
+              hip(s).<sup>4</sup> It&apos;s important to note that screening for
+              fragility fractures carries the potential for overdiagnosis and
+              adverse effects from treatment.
             </p>
             <p>
-              The Canadian task force recommends screening starting at the age
+              The Canadian Task Force recommends screening starting at the age
               of 65. It is recommended to use the risk assessment tool known as
               FRAX as an initial tool to estimate the risk of a fracture.
               <sup>5</sup> After assessing your risk, you may be offered further
               tests such as undergoing a BMD test.<sup>2</sup>
             </p>
             <p>
-              It is important to tell your doctor if you had a recent exam with
-              contrast (such as a CT or nuclear medicine test), as it may
-              interfere with the imaging.<sup>6</sup>
+              It is important to tell your doctor if you have had a recent exam
+              with contrast (such as a CT scan or nuclear medicine test), as it
+              may interfere with the imaging.<sup>6</sup>
             </p>
             <p>
               Engaging in exercise that involves weight-bearing and resistance
               exercises helps maintain the strength of your bones. These
               exercises can include walking, jogging, weightlifting, or using
-              resistance bands. working on balance. Activities like Yoga and Tai
-              chi are known to improve balance and stability. A diet rich in
-              calcium is important to ensure good bone health. This includes
-              dairy products or fortified plant based milk.<sup>7</sup> Vitamin
-              D supplementation is recommended for all Canadian adults.
+              resistance bands. As well, activities like Yoga and Tai chi are
+              known to improve balance and stability. A diet rich in calcium is
+              important to ensure good bone health. This includes dairy products
+              or fortified plant based milk.<sup>7</sup> Vitamin D
+              supplementation is recommended for all Canadian adults.
               <sup>8</sup> Smoking has been shown to have negative effects on
-              the skeletal system, and is a risk factor for developing
-              osteoporosis.<sup>9</sup>
+              the skeletal system, and is a risk factor for acquiring fragility
+              fractures.<sup>9</sup>
             </p>
             <p>
               Quitting at any age can lower this risk. Please visit{" "}
