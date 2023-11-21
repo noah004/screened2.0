@@ -3,10 +3,9 @@ import "../../../public/styles/styles.css";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import ScrollTopButton from "../../components/scroll-top-button";
-import papTestPNG from "../images/pap-test.png";
-import CHEPCriteriaPNG from "../images/chep-criteria.png";
-import initiatingStatins1PNG from "../images/initiating-statins-part1.png";
-import initiatingStatins2PNG from "../images/initiating-statins-part2.png";
+import papTestSVG from "../images/pap-test.svg";
+import CHEPCriteriaSVG from "../images/chep-criteria.svg";
+import initiatingStatinsPNG from "../images/initiating-statins.png";
 import { useMemo } from "react";
 
 export default function NestedNavigation({
@@ -230,7 +229,7 @@ export default function NestedNavigation({
               result.<sup>2</sup>
             </p>
             <Image
-              src={papTestPNG}
+              src={papTestSVG}
               alt="Pap test results diagram"
               style={{ width: "100%", height: "auto", marginBottom: "30px" }}
               sizes="100vw"
@@ -349,22 +348,17 @@ export default function NestedNavigation({
               <ol>
                 <li>
                   In Quebec, high risk individuals include those with a
-                  significant family history as defined by:
+                  significant family history of colorectal cancer or polyps, as
+                  defined by any of the following (excluding hyperplastic polyps
+                  &lt; 10 mm present in the rectum or sigmoid colon ):
                   <ul>
+                    <li>A first degree relative below the age of 60</li>
                     <li>
-                      Colorectal cancer or polyps (except for hyperplastic
-                      polyps &lt; 10 mm present in the rectum or sigmoid colon)
-                      in a first degree relative below the age of 60
-                      <ul>
-                        <li>
-                          2 first degree relatives regardless of age when
-                          diagnosed
-                        </li>
-                        <li>
-                          1 first degree and 1 second degree relative on the
-                          same family side, regardless of age when diagnosed
-                        </li>
-                      </ul>
+                      2 first degree relatives regardless of age when diagnosed
+                    </li>
+                    <li>
+                      1 first degree and 1 second degree relative on the same
+                      family side, regardless of age when diagnosed
                     </li>
                   </ul>
                 </li>
@@ -577,8 +571,7 @@ export default function NestedNavigation({
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Getting beyond “Now is not a good time to quit smoking”
-                    Increasing motivation to stop smoking.
+                    Getting beyond “Now is not a good time to quit smoking.”
                   </a>
                 </li>
               </ul>
@@ -681,7 +674,7 @@ export default function NestedNavigation({
               guidelines and can aid in diagnosis.<sup>2</sup>
             </p>
             <Image
-              src={CHEPCriteriaPNG}
+              src={CHEPCriteriaSVG}
               alt="Hypertension Canada Guidline Diagram"
               style={{ width: "100%", height: "auto", marginBottom: "30px" }}
             />
@@ -940,7 +933,7 @@ export default function NestedNavigation({
               can be used to calculate the risk of major cardiovascular events.
               Patients will be stratified into low, intermediate or high risk
               which will aid in guiding therapy. Please see{" "}
-              <a href="#initiatingStatins1PNG" className={colorTheme}>
+              <a href="#initiatingStatinsPNG" className={colorTheme}>
                 image
               </a>{" "}
               below for an approach to initiating statins.
@@ -964,21 +957,16 @@ export default function NestedNavigation({
               improve cardiovascular outcomes.<sup>1,2</sup>
             </p>
             <Image
-              id="initiatingStatins1PNG"
-              src={initiatingStatins1PNG}
-              alt="Initiating Statins Diagram Part 1"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <Image
-              src={initiatingStatins2PNG}
-              alt="Initiating Statins Diagram Part 2"
+              id="initiatingStatinsPNG"
+              src={initiatingStatinsPNG}
+              alt="Initiating Statins Diagram"
               style={{ width: "100%", height: "auto" }}
             />
             <i>
               Image from:{" "}
               <a
                 className={colorTheme}
-                href="https://ccs.ca/app/uploads/2022/07/2022-Lipids-Gui-PG-EN.pdf5"
+                href="https://ccs.ca/app/uploads/2022/07/2022-Lipids-Gui-PG-EN.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -987,6 +975,7 @@ export default function NestedNavigation({
               </a>
               .
             </i>
+            <br />
             <span style={{ marginTop: "30px" }}>
               <b>Direct Links:</b>
               <ul>
