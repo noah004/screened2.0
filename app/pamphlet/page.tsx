@@ -48,12 +48,8 @@ export default function Page() {
             <h2
               className="pamphlet-download-link"
               style={{
-                borderStyle: "solid",
                 borderWidth: "3px",
-                width: "fit-content",
                 borderColor: "rgb(146,190,241)",
-                color: "rgb(146,190,241)",
-                padding: "3px",
               }}
             >
               <a
