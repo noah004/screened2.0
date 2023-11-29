@@ -59,8 +59,8 @@ export default function Page() {
                 />
                 <div className="inner-home-box">
                   <h5 style={{}}>Physicians, Residents and Medical Students</h5>
-                  Up to date information on screening recommendations aimed at
-                  facilitating clinical encounters.
+                  Information on screening aimed at facilitating clinical
+                  encounters.
                 </div>
                 <a href="./for-medical-professionals" className="div-link">
                   <span></span>
