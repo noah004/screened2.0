@@ -34,16 +34,6 @@ export default function Page() {
               using the chart, you can stay organized and up-to-date with your
               screening schedule.
             </p>
-            <h2>
-              Download the Pamphlet:{" "}
-              <a
-                href="/files/pamphlet.pdf"
-                download="Screened_Pamphlet"
-                style={{ color: "rgb(146,190,241)" }}
-              >
-                Download
-              </a>
-            </h2>
 
             <h4>Disclaimer:</h4>
             <p>
@@ -55,6 +45,32 @@ export default function Page() {
               an informed decision, you can take control of your health and
               ultimately make the best choice for you.
             </p>
+            <h2
+              className="pamphlet-download-link"
+              style={{
+                borderStyle: "solid",
+                borderWidth: "3px",
+                width: "fit-content",
+                borderColor: "rgb(146,190,241)",
+                color: "rgb(146,190,241)",
+                padding: "3px",
+              }}
+            >
+              <a
+                href="/files/pamphlet.pdf"
+                download="Screened_Pamphlet"
+                style={{
+                  color: "rgb(146,190,241)",
+                  textDecoration: "none",
+                  width: "fit-content",
+                  maxWidth: "100px",
+                  padding: "4px",
+                }}
+              >
+                Download the Pamphlet
+              </a>
+            </h2>
+            <br />
             <h5>
               Visit the{" "}
               <a href="./for-patients" className="orange">
@@ -62,6 +78,7 @@ export default function Page() {
               </a>{" "}
               section for more detailed information about each screening test.
             </h5>
+            <br />
           </div>
         </div>
       </div>
