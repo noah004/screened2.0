@@ -35,10 +35,16 @@ export default function Page() {
               using the chart, you can stay organized and up-to-date with your
               screening schedule.
             </p>
-            <h2>Download the Pamphlet:</h2>
-            <a href="/files/pamphlet.pdf" download="Screened_Pamphlet">
-              Download
-            </a>
+            <h2>
+              Download the Pamphlet:{" "}
+              <a
+                href="/files/pamphlet.pdf"
+                download="Screened_Pamphlet"
+                style={{ color: "rgb(146,190,241)" }}
+              >
+                Download
+              </a>
+            </h2>
 
             <h4>Disclaimer:</h4>
             <p>
