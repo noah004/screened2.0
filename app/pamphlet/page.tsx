@@ -36,13 +36,9 @@ export default function Page() {
               screening schedule.
             </p>
             <h2>Download the Pamphlet:</h2>
-            <p style={{ color: "orange" }}>
-              🚧{" "}
-              <u>
-                <b>Pamphlet is under construction</b>
-              </u>{" "}
-              🚧
-            </p>
+            <a href="/files/pamphlet.pdf" download="Screened_Pamphlet">
+              Download
+            </a>
 
             <h4>Disclaimer:</h4>
             <p>
