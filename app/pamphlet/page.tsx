@@ -22,8 +22,7 @@ export default function Page() {
               The screening pamphlet aims to explain the purpose of each test,
               what to expect during the procedure and when you should start the
               specific screening method based on the most up-to-date guidelines.
-              We also provide tips on how best to prepare for the test and what
-              else you can do to remain healthy.
+              We also provide tips on how best to prepare for the test.
             </p>
 
             <h3>How to use:</h3>
