@@ -95,13 +95,14 @@ export default function NestedNavigation({
             }
             style={
               windowWidth > 767
-                ? { maxHeight: "100vh", minHeight: "90vh" }
+                ? { maxHeight: "100vh", minHeight: "90vh", top: "90px" }
                 : {
                     maxHeight: "90vh",
                     maxWidth: "80%",
                     marginLeft: "10%",
                     padding: "0px",
                     borderRadius: "7px",
+                    zIndex: "0",
                   }
             }
           >

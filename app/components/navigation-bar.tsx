@@ -14,6 +14,9 @@ export default function NavigationBar({
       style={{
         backgroundColor: color,
         fontSize: "18px",
+        position: "sticky",
+        zIndex: "1020",
+        top: "0px",
       }}
     >
       <div className="container-fluid">
