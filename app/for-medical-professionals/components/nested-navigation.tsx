@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import ScrollTopButton from "../../components/scroll-top-button";
 import papTestSVG from "../images/pap-test.svg";
-import CHEPCriteriaSVG from "../images/chep-criteria.svg";
+import CHEPCriteriaImage from "../images/chep-criteria.png";
 import initiatingStatinsPNG from "../images/initiating-statins.png";
 import { useMemo } from "react";
 
@@ -219,10 +219,11 @@ export default function NestedNavigation({
           >
             <h1>Cervical Cancer</h1>
             <p>
-              Pap tests are recommended to begin at age 21 if sexually active.
+              Pap tests are recommended to begin at age 25 if sexually active.
               If the result is normal, it can be repeated every 2-3 years.
-              Screening can stop at age 65 if the last 3 tests in the past 10
-              years were negative
+              Screening can stop at age 69 if the last 3 tests in the past 10
+              years were negative. Many provinces are now transitioning to HPV
+              testing to replace pap tests.
               <sup>1</sup>
             </p>
             <p>
@@ -486,11 +487,13 @@ export default function NestedNavigation({
           >
             <h1>Type Two Diabetes</h1>
             <p>
-              According to the Canadian Task Force, recommendations for primary
-              screening of type two diabetes depend on the patient&apos;s level
-              of risk, which can be validated by screening tools. They do not
-              apply for people with symptoms of diabetes or people who are at
-              risk of developing type two diabetes.<sup>1</sup>
+              Recommendations for diabetes screening differ between Diabetes
+              Canada and Canadian Task Force. According to the Canadian Task
+              Force, recommendations for primary screening of type two diabetes
+              depend on the patient&apos;s level of risk, which can be validated
+              by screening tools. They do not apply for people with symptoms of
+              diabetes or people who are at risk of developing type two
+              diabetes.<sup>1</sup>
             </p>
             <p>
               One can use the FINDRISC<sup>2</sup> to assess the risk.
@@ -669,13 +672,12 @@ export default function NestedNavigation({
               primary care visits for adults aged 18 and older.<sup>1</sup>
             </p>
             <p>
-              If your patient meets criteria for elevated blood pressure, follow
-              the CHEP criteria to assess whether they meet criteria for
-              diagnosis. The image below is adapted from the hypertension canada
-              guidelines and can aid in diagnosis.<sup>2</sup>
+              Guidelines have recently been updated (2025) which simplify
+              diagnosis of hypertension. Please see algorithm below.
+              <sup>2</sup>
             </p>
             <Image
-              src={CHEPCriteriaSVG}
+              src={CHEPCriteriaImage}
               alt="Hypertension Canada Guidline Diagram"
               style={{ width: "100%", height: "auto", marginBottom: "30px" }}
             />

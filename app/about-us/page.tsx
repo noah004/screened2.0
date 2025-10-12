@@ -38,9 +38,8 @@ const aboutNoa = {
   about:
     "As a medical student and ambassador for this project, I update the " +
     "platform with the latest Canadian screening guidelines to ensure " +
-    "accuracy for both patients and healthcare professionals. With a " +
-    "strong passion for family medicine, prevention, and holistic care, " +
-    "my goal is to help build bridges between evidence-based guidelines " +
+    "accuracy for both patients and healthcare professionals. " +
+    "My goal is to help build bridges between evidence-based guidelines " +
     "and everyday practice, so that families and communities can make " +
     "informed decisions about their health and well-being.",
 };

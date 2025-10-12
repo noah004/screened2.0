@@ -250,10 +250,12 @@ export default function NestedNavigation({
               ability to prevent cervical cancer from developing.
             </p>
             <p>
-              It is recommended to undergo a pap test between ages 21-65 every
-              2-3 years. This can be delayed if not yet sexually active at age
-              21. Screening can be stopped at age 65 if the last 3 consecutive
-              pap tests in the past 10 years have been negative.
+              Cervical cancer screening begins at age 25. Pap test were main
+              method of cervical cancer screening however many provinces are now
+              switching from pap test to HPV testing every 5 years. Pap tests
+              are every 2-3 years. This can be delayed if not yet sexually
+              active at age 25. Screening can be stopped at age 69 if the last 3
+              consecutive pap tests in the past 10 years have been negative.
             </p>
             <p>
               Pap tests may be uncomfortable however they should generally not
@@ -404,13 +406,14 @@ export default function NestedNavigation({
               diagnosed at a more advanced stage.
             </p>
             <p>
-              Currently, there are no official screening recommendations for
-              lung cancer in Quebec. However, in 2021, Quebec initiated a lung
-              cancer screening demonstration project.<sup>2</sup> This program
-              offers a low dose CT scan for people at high risk of developing
-              lung cancer. This includes: people between the ages of 55-74 who
-              have either smoked on or off for at least 20 years or smoked on or
-              off for at least 20 years and quit less than 15 years ago.
+              Across Canada, lung cancer screening is offered in special
+              hospital programs.
+              <sup>2</sup> This program offers a low dose CT scan for people at
+              high risk of developing lung cancer. This includes: people between
+              the ages of 55-74 who have either smoked on or off for at least 20
+              years or smoked on or off for at least 20 years and quit less than
+              15 years ago. The test is a low-dose CT scan of the chest once a
+              year, up to 3 times.
             </p>
             <p>
               If you do not have a healthcare provider, you can email{" "}
@@ -497,7 +500,8 @@ export default function NestedNavigation({
               A1C, another glucose test that acts a proxy for the average
               glucose level in the last three months. Individuals aged 18 and
               older can use the CANRISK questionnaire to continue assessing the
-              risk of developing diabetes.<sup>5</sup>
+              risk of developing diabetes. Screening usually begins at age 40.
+              <sup>5</sup>
             </p>
             <p>
               Before coming to the test, ask your healthcare professional if you
@@ -675,7 +679,10 @@ export default function NestedNavigation({
             <p>
               The Canadian Task Force recommends that blood pressure should be
               checked at all appropriate primary health care visits for
-              individuals above 18 years of age.<sup>5,6</sup>
+              individuals above 18 years of age. <sup>5,6</sup>
+            </p>
+            <p>
+              The usual target blood pressure is less than 130/80.<sup>7</sup>
             </p>
             <p>
               Before taking your blood pressure, your healthcare provider will
@@ -810,6 +817,17 @@ export default function NestedNavigation({
                   Canada&apos;s 2020 Comprehensive Guidelines for the
                   Prevention, Diagnosis, Risk Assessment, and Treatment of
                   Hypertension in Adults and Children.
+                </a>
+              </li>
+              <li>
+                <a
+                  className={colorTheme}
+                  href="https://hypertension.ca/wp-content/uploads/2025/05/Hypertension-guideline.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hypertension Canada guideline for the diagnosis and treatment
+                  of hypertension in adults in primary care (2025)
                 </a>
               </li>
             </ol>
