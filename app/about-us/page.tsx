@@ -85,12 +85,6 @@ export default function Page() {
           image={aboutDavid.Image}
           about={aboutDavid.about}
         />
-        <AboutStaff
-          name={aboutNoa.name}
-          role={aboutNoa.role}
-          image={aboutNoa.Image}
-          about={aboutNoa.about}
-        />
       </div>
     </>
   );
